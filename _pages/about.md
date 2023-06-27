@@ -21,11 +21,10 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 
 # Selected Projects
 ## ETH 2022 Rendering Competition
-__Boxiang Rong__, Ziyao Shang 
 
-Course project of Computer Graphics 2022 in ETH Zurich
-
-Website | Code(not available)
+__Boxiang Rong__, Ziyao Shang  
+Course project of Computer Graphics 2022 in ETH Zurich  
+[(Website)[]][Code(not available)]  
 
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="700px">
