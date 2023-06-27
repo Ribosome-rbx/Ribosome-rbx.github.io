@@ -22,7 +22,7 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 # Selected Projects
 ## ETH 2022 Rendering Competition
 
-__Boxiang Rong__, Ziyao Shang  
+<strong>Boxiang Rong</strong>, Ziyao Shang  
 Course project of Computer Graphics 2022 in ETH Zurich  
 [[Website]()][Code(not available)]  
 
@@ -35,14 +35,21 @@ Our renderer is built from stratch using Nori codebase. In the project, I built 
 
 
 ## Motion Matching for Responsive Animation for Digital Humans
-__Boxiang Rong*__, Longteng Duan*, Guo Han*, Hang Yin*
-Course project of Digital Humans 2023 in ETH Zurich
-<img src="../images/dg.gif" alt="Project Profile" width="700px">
+\_Boxiang Rong*\_, Longteng Duan*, Guo Han*, Hang Yin*  
+Course project of Digital Humans 2023 in ETH Zurich  
+[[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
+<img src="../images/dg.gif" alt="Project Profile" width="600px">
+
+Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
+
+Our renderer is built from stratch using Nori codebase. In the project, I built the whole scene using blender and implemented rendering functions, including Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
+
 
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
-__Boxiang Rong*__, Longteng Duan*, Guo Han*, Hang Yin*
-Course project of 3D Vision 2023 in ETH Zurich
-![Project Profile](../images/dg.gif)
+\*Boxiang Rong*\*, Zilong Deng*, Ziyao Shang*, Minjing Shi*  
+Course project of 3D Vision 2023 in ETH Zurich  
+[[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
+<img src="../images/dg.gif" alt="Project Profile" width="600px">
 
 
 Getting started
