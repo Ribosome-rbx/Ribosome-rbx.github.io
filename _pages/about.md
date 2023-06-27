@@ -12,17 +12,24 @@ My name is Boxiang Rong(荣波翔), I am currently a Master student of Robotics,
 
 My interests lie in the fields of computer graphics and computer vision. I am fascinated with creating immersive virtual world and committed to working in the areas of rendering, character motion, and physics-based simulation.
 
+# Education
+* 2022 - Present, Master of Science, Robotics Systems and Contorl, ETH Zurich, Switzerland.
+* 2018 - 2022, Bachelor of Engineering, Communication Engineering, Tianjin University, China.
+
+# Selected Projects
+## ETH 2022 Rendering Competition
+**Boxiang Rong**, Ziyao Shang
+![Project Profile](../images/rendering_competition.gif)
+Theme for this year's rendering competition is "Out Of Place". Inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1), we built a scene, where huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
+
+We built our renderer from stratch on Nori codebase. In the project, I implemented functions, including 
 
 
-# Projects
 ## ETH 2022 Rendering Competition
 ![Project Profile](../images/rendering_competition.gif)
 
-## ETH 2022 Rendering Competition
-![Project Profile](../images/rendering_competition.gif)
 
-## ETH 2022 Rendering Competition
-![Project Profile](../images/rendering_competition.gif)
+<a href="https://clustrmaps.com/site/1bvcc" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff"></a>
 
 Getting started
 ======
@@ -57,5 +64,5 @@ For more info
 ------
 More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
 
-# [Projects](#projects)
+# [Projects](#selected-projects)
 this is a test
