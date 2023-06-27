@@ -38,9 +38,7 @@ Course project of Digital Humans 2023 in ETH Zurich
 [[Report]()][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
 <img src="../images/dg.gif" alt="Project Profile" width="600px">
 
-Motion matching is a simple yet effective character animation tool for synthesizing motions that follow a user’s high-level command input. In this project, we implement a motion matching pipeline from scratch by utilizing publicly available motion capture datasets ([LaFan1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)).
-C++ implementation of a motion matching algorithm with our code base (similar with the code base provided for the assignments)
-A real-time (video game-like!) demo of responsive character animation  
+Motion matching is a simple yet effective character animation tool for synthesizing motions that follow a user’s high-level command input. In this project, we implement a motion matching pipeline from scratch by utilizing publicly available motion capture datasets ([LaFan1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)). Checkout the real-time (video game-like!) [demo](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb) of responsive character animation. 
 
 To summarize the pipeline: After loading human skeleton motion data, we constructed **2d and 3d feature base** for all frames of motions. Then we use **spring damper system** to generate smooth trajectories, this information will be combined with current states to match next motion. After each metching, **inertialization** is implemented to get a smooth pose transformation.
 
