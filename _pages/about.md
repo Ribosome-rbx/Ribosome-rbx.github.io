@@ -25,12 +25,12 @@ __Boxiang Rong__, Ziyao Shang
 
 Course project of Computer Graphics 2022 in ETH Zurich
 
-Website | [Code not available]
+Website | Code(not available)
 
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="700px">
 
-Theme for this year's rendering competition is _"Out Of Place"_. Inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1), we built a scene, where huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
+Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
 Our renderer is built from stratch using Nori codebase. In the project, I built the whole scene using blender and implemented rendering functions, including Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
 
