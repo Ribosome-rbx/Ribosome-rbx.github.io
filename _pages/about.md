@@ -12,15 +12,15 @@ My name is Boxiang Rong(荣波翔), I am currently a Master student of Robotics,
 
 My interests lie in the fields of computer graphics and computer vision. I am fascinated with creating immersive virtual world and committed to working in the areas of rendering, character motion, and physics-based simulation.
 
-# Education
+## Education
 
 * 2022 - Present, Master of Science, Robotics Systems and Contorl, ETH Zurich, Switzerland.
 * 2018 - 2022, Bachelor of Engineering, Communication Engineering, Tianjin University, China.
 
 
 
-# Selected Projects
-## ETH 2022 Rendering Competition
+## Selected Projects
+### ETH 2022 Rendering Competition
 <strong>Boxiang Rong</strong>, Ziyao Shang  
 Course project of Computer Graphics 2022 in ETH Zurich  
 [[Website]()][Code(not available)]  
@@ -31,7 +31,7 @@ Theme for this year's rendering competition is _"Out Of Place"_. Our work is ins
 Our renderer is built from stratch using Nori codebase. In the project, I built the whole scene using blender and implemented rendering functions, including Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
 
 
-## Motion Matching for Responsive Animation for Digital Humans
+### Motion Matching for Responsive Animation for Digital Humans
 <strong>Boxiang Rong</strong>*, Longteng Duan*, Guo Han*, Hang Yin*  
 Course project of Digital Humans 2023 in ETH Zurich  
 [[Report]()][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
@@ -42,10 +42,10 @@ C++ implementation of a motion matching algorithm with our code base (similar wi
 A real-time (video game-like!) demo of responsive character animation  
 (optional) extension to physically-based character animation through RL or a deep learning-based method for better scalability.
 
-To summarize the pipeline: After loading human skeleton motion data, we constructed **2d and 3d feature base** for all frames of motions. Then we use **spring damper system** to generate smooth trajectories, this information will be combined with current states to match next motion. After each metching, inertialization is implemented to get a smooth pose transformation.
+To summarize the pipeline: After loading human skeleton motion data, we constructed **2d and 3d feature base** for all frames of motions. Then we use **spring damper system** to generate smooth trajectories, this information will be combined with current states to match next motion. After each metching, **inertialization** is implemented to get a smooth pose transformation.
 
-Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We customized a pose dataset to turn pose into command by classification, and leveraged FastPose to capture poses in real-time. 
-## Head-Worn Camera Image Stabilization using Neural Radiance Field
+Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We collected a [pose dataset](https://github.com/Ribosome-rbx/pose-classifier-on-fastpose) to turn pose into command by classification, and leveraged FastPose to capture poses in real-time. 
+### Head-Worn Camera Image Stabilization using Neural Radiance Field
 <strong>Boxiang Rong</strong>*, Zilong Deng, Ziyao Shang, Minjing Shi  
 Course project of 3D Vision 2023 in ETH Zurich  
 [[Report]()][[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
