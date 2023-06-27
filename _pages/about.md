@@ -21,7 +21,7 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 
 # Selected Projects
 ## ETH 2022 Rendering Competition
-<strong>Boxiang Rong</strong>*, Ziyao Shang*  
+<strong>Boxiang Rong</strong>\*, Ziyao Shang\*  
 Course project of Computer Graphics 2022 in ETH Zurich  
 [[Website]()][Code(not available)]  
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
@@ -33,7 +33,7 @@ Our renderer is built from stratch using Nori codebase. In the project, I built 
 
 
 ## Motion Matching for Responsive Animation for Digital Humans
-<strong>Boxiang Rong</strong>*, Longteng Duan*, Guo Han*, Hang Yin*  
+<strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han*, Hang Yin*  
 Course project of Digital Humans 2023 in ETH Zurich  
 [[Report]()][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
 <img src="../images/dg.gif" alt="Project Profile" width="600px">
@@ -46,7 +46,7 @@ To summarize the pipeline: After loading human skeleton motion data, we construc
 
 Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We collected a [pose dataset](https://github.com/Ribosome-rbx/pose-classifier-on-fastpose) to turn pose into command by classification, and leveraged [FastPose](https://drnoodle.github.io/fastpose_html/) to capture poses in real-time. 
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
-<strong>Boxiang Rong</strong>*, Zilong Deng, Ziyao Shang, Minjing Shi  
+<strong>Boxiang Rong</strong>, Zilong Deng, Ziyao Shang, Minjing Shi  
 Course project of 3D Vision 2023 in ETH Zurich  
 [[Report]()][[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
 <img src="../images/room.gif" alt="Project Profile" width="600px">  
