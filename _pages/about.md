@@ -56,3 +56,8 @@ Motion blur happens with fast head-camera movement and long exposure times. In t
 Main Contributions:
 * Build mesh reconstruction pipeline with Open3d, including aligning depth to RGB images, Point-Cloud reconstruction and stitching, Poisson surface reconstruction, and Color Map Optimization
 * Modified Deblur Nerf to load our dataset and add trajectory information to better model blurry pattern
+
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff&w=a"></script>
+
+<a href="https://clustrmaps.com/site/1bvcc"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff" /></a>
