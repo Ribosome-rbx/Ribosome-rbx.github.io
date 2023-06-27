@@ -19,8 +19,8 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 
 
 
-## Selected Projects
-### ETH 2022 Rendering Competition
+# Selected Projects
+## ETH 2022 Rendering Competition
 <strong>Boxiang Rong</strong>, Ziyao Shang  
 Course project of Computer Graphics 2022 in ETH Zurich  
 [[Website]()][Code(not available)]  
@@ -31,7 +31,7 @@ Theme for this year's rendering competition is _"Out Of Place"_. Our work is ins
 Our renderer is built from stratch using Nori codebase. In the project, I built the whole scene using blender and implemented rendering functions, including Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
 
 
-### Motion Matching for Responsive Animation for Digital Humans
+## Motion Matching for Responsive Animation for Digital Humans
 <strong>Boxiang Rong</strong>*, Longteng Duan*, Guo Han*, Hang Yin*  
 Course project of Digital Humans 2023 in ETH Zurich  
 [[Report]()][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
@@ -40,50 +40,19 @@ Course project of Digital Humans 2023 in ETH Zurich
 Motion matching is a simple yet effective character animation tool for synthesizing motions that follow a user’s high-level command input. In this project, we implement a motion matching pipeline from scratch by utilizing publicly available motion capture datasets ([LaFan1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)).
 C++ implementation of a motion matching algorithm with our code base (similar with the code base provided for the assignments)
 A real-time (video game-like!) demo of responsive character animation  
-(optional) extension to physically-based character animation through RL or a deep learning-based method for better scalability.
 
 To summarize the pipeline: After loading human skeleton motion data, we constructed **2d and 3d feature base** for all frames of motions. Then we use **spring damper system** to generate smooth trajectories, this information will be combined with current states to match next motion. After each metching, **inertialization** is implemented to get a smooth pose transformation.
 
-Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We collected a [pose dataset](https://github.com/Ribosome-rbx/pose-classifier-on-fastpose) to turn pose into command by classification, and leveraged FastPose to capture poses in real-time. 
-### Head-Worn Camera Image Stabilization using Neural Radiance Field
+Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We collected a [pose dataset](https://github.com/Ribosome-rbx/pose-classifier-on-fastpose) to turn pose into command by classification, and leveraged [FastPose](https://drnoodle.github.io/fastpose_html/) to capture poses in real-time. 
+## Head-Worn Camera Image Stabilization using Neural Radiance Field
 <strong>Boxiang Rong</strong>*, Zilong Deng, Ziyao Shang, Minjing Shi  
 Course project of 3D Vision 2023 in ETH Zurich  
 [[Report]()][[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
 <img src="../images/room.gif" alt="Project Profile" width="600px">
+Motion blur happens with fast head-camera movement and long exposure times. In this project, we proposed to reconstruct the indoor environment in advance and render clear images to replace blurry camera views to achieve the goal of image stabilization. We used four pipelines, including traditional reconstruction and NeRF-based ones (Depth-Supervised NeRF, Deblur NeRF, Instant NGP). Experiments were done on three scenes to test the stabilizing performance and analyze the pros and cons of each pipeline. We also proposed adding camera motion information to Deblur NeRF for better deblurring and verified the performance of our modification.
 
+In this project, we propose to generate clear images of a room by utilizing pre-built NeRF-based models using photos taken by head-worn cameras (VR devices). a) Since "Motion Blur" brought on by rapid movement gives users a bad experience, we want to create a NeRF model which renders clear room views, trained with the existence of blurry images. b) By leveraging the depth information to reduce the amount of training images, we hope to improve the quality while lower the cost and difficulty of building a NeRF for the entire room.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-2. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-3. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-4. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-5. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-6. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
-
-# [Projects](#selected-projects)
-this is a test
+Build mesh reconstruction pipeline with Open3d, including aligning depth to RGB images, Point-Cloud
+reconstruction and stitching, Poisson surface reconstruction, and Color Map Optimization
+• Modified Deblur Nerf to load our dataset and add trajectory information to better model blurry pattern
