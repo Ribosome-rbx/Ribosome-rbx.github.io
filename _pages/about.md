@@ -13,23 +13,35 @@ My name is Boxiang Rong(荣波翔), I am currently a Master student of Robotics,
 My interests lie in the fields of computer graphics and computer vision. I am fascinated with creating immersive virtual world and committed to working in the areas of rendering, character motion, and physics-based simulation.
 
 # Education
+
 * 2022 - Present, Master of Science, Robotics Systems and Contorl, ETH Zurich, Switzerland.
+* 
 * 2018 - 2022, Bachelor of Engineering, Communication Engineering, Tianjin University, China.
+
+
 
 # Selected Projects
 ## ETH 2022 Rendering Competition
-**Boxiang Rong**, Ziyao Shang
-![Project Profile](../images/rendering_competition.gif)
-Theme for this year's rendering competition is "Out Of Place". Inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1), we built a scene, where huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
+__Boxiang Rong__, Ziyao Shang
+Course project of Computer Graphics 2022 in ETH Zurich
+Website | [Code not available]
+<!-- ![Project Profile](../images/rendering_competition.gif) -->
+<img src="../images/rendering_competition.gif" alt="Project Profile" width="700px">
+Theme for this year's rendering competition is _"Out Of Place"_. Inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1), we built a scene, where huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
-We built our renderer from stratch on Nori codebase. In the project, I implemented functions, including 
+Our renderer is built from stratch using Nori codebase. In the project, I built the whole scene using blender and implemented rendering functions, including Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
 
 
-## ETH 2022 Rendering Competition
-![Project Profile](../images/rendering_competition.gif)
+## Motion Matching for Responsive Animation for Digital Humans
+__Boxiang Rong__*, Longteng Duan*, Guo Han*, Hang Yin*
+Course project of Digital Humans 2023 in ETH Zurich
+![Project Profile](../images/dg.gif)
 
+## Head-Worn Camera Image Stabilization using Neural Radiance Field
+__Boxiang Rong__*, Longteng Duan*, Guo Han*, Hang Yin*
+Course project of 3D Vision 2023 in ETH Zurich
+![Project Profile](../images/dg.gif)
 
-<a href="https://clustrmaps.com/site/1bvcc" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff"></a>
 
 Getting started
 ======
