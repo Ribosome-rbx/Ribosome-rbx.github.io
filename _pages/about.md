@@ -24,10 +24,10 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 
 __Boxiang Rong__, Ziyao Shang  
 Course project of Computer Graphics 2022 in ETH Zurich  
-[(Website)[]][Code(not available)]  
+[[Website]()][Code(not available)]  
 
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
-<img src="../images/rendering_competition.gif" alt="Project Profile" width="700px">
+<img src="../images/rendering_competition.gif" alt="Project Profile" width="600px">
 
 Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
@@ -35,12 +35,12 @@ Our renderer is built from stratch using Nori codebase. In the project, I built 
 
 
 ## Motion Matching for Responsive Animation for Digital Humans
-__Boxiang Rong__*, Longteng Duan*, Guo Han*, Hang Yin*
+__Boxiang Rong*__, Longteng Duan*, Guo Han*, Hang Yin*
 Course project of Digital Humans 2023 in ETH Zurich
-![Project Profile](../images/rendering_competition.gif)
+<img src="../images/dg.gif" alt="Project Profile" width="700px">
 
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
-__Boxiang Rong__*, Longteng Duan*, Guo Han*, Hang Yin*
+__Boxiang Rong*__, Longteng Duan*, Guo Han*, Hang Yin*
 Course project of 3D Vision 2023 in ETH Zurich
 ![Project Profile](../images/dg.gif)
 
