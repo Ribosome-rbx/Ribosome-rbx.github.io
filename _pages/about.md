@@ -33,7 +33,7 @@ Our renderer is built from stratch using Nori codebase. In the project, I built 
 
 
 ## Motion Matching for Responsive Animation for Digital Humans
-<strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han*, Hang Yin*  
+<strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han\*, Hang Yin\*  
 Course project of Digital Humans 2023 in ETH Zurich  
 [[Report]()][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
 <img src="../images/dg.gif" alt="Project Profile" width="600px">
