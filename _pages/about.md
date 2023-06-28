@@ -59,7 +59,7 @@ Main Contributions:
 * Build mesh reconstruction pipeline with Open3d, including aligning depth to RGB images, Point-Cloud reconstruction and stitching, Poisson surface reconstruction, and Color Map Optimization
 * Modified Deblur Nerf to load our dataset and add trajectory information to better model blurry pattern
 
-## Priority Labeling in The Scenarios of Self-Driving
+## Priority Labeling in the Scenarios of Self-Driving
 <strong>Boxiang Rong</strong>, [Hang Zhao](https://hangzhaomit.github.io/)  
 Research project in Shanghai [Qizhi AI Lab](https://sqz.ac.cn/en) 2022  
 [[Code](https://github.com/Ribosome-rbx/detmetric)][[Slides](https://docs.google.com/presentation/d/1IhTVg7qeNFhnkSjIlrXehNOPWBuDZcuHGkt0_8GhFJ0/edit?usp=sharing)]   
