@@ -43,6 +43,7 @@ Motion matching is a simple yet effective character animation tool for synthesiz
 To summarize the pipeline: After loading human skeleton motion data, we constructed **2d and 3d feature base** for all frames of motions. Then we use **spring damper system** to generate smooth trajectories, this information will be combined with current states to match next motion. After each metching, **inertialization** is implemented to get a smooth pose transformation.
 
 Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We collected a [pose dataset](https://github.com/Ribosome-rbx/pose-classifier-on-fastpose) to turn pose into command by classification, and leveraged [FastPose](https://drnoodle.github.io/fastpose_html/) to capture poses in real-time. 
+
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
 <strong>Boxiang Rong</strong>, Zilong Deng, Ziyao Shang, Minjing Shi  
 Course project of 3D Vision 2023 in ETH Zurich  
@@ -55,5 +56,14 @@ Main Contributions:
 * Build mesh reconstruction pipeline with Open3d, including aligning depth to RGB images, Point-Cloud reconstruction and stitching, Poisson surface reconstruction, and Color Map Optimization
 * Modified Deblur Nerf to load our dataset and add trajectory information to better model blurry pattern
 
-<!-- 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff&w=a"></script> -->
+## Priority Labeling in The Scenarios of Self-Driving
+<strong>Boxiang Rong</strong>, [Hang Zhao](https://hangzhaomit.github.io/)
+Research project in Shanghai [Qi Zhi Institute](https://sqz.ac.cn/en) 2022  
+[[Code](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Slides](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
+<img src="../images/drive.gif" alt="Project Profile" width="600px">
+
+Street scenarios is generally complex, where numbers of pedestrains, vehicles and obstacles interact with each other. But we don't need to pay equal attention to all of the visible targets. Instead, similar to human drivers, we only care about the important target that are most likely to appear in our way and influence our driving.
+
+Our work is done on on Nuscenes dataset. We arranged human labellers to put priority levels to all visible targets, and also designed rule-based algorithm to automaticly labeling priorities. 
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff&w=a"></script>
