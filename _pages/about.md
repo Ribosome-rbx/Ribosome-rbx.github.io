@@ -69,7 +69,7 @@ Street scenarios are generally complex, where numbers of pedestrains, vehicles a
 
 Our work is done on on Nuscenes dataset. We arranged human drivers to **manually annotate** priority levels to all visible targets. And we also designed **rule-based algorithm** to automaticly annotate priorities, which considers information, like distance and relative velocity between ego and targets, trajectory intersections, and map-based terrain information.
 
-<div style="position: relative; bottom: -120px; width: 50%;">
-  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff&w=a" width="200px">
-  </script>
-</div>
+<!-- <div style="position: relative; width: 50%;"> -->
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff&w=a" width="200px">
+</script>
+<!-- </div> -->
