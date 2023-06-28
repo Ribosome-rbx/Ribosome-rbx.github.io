@@ -82,21 +82,21 @@ author_profile: true
         <li>
             <p>Compare model with and without textrue mapping</p>
             <div class="twentytwenty-container">
-                <img src="images/Boxiang_rong/image_texture/cbox.png" alt="w/o textrue" class="Images as Textures">
-                <img src="images/Boxiang_rong/image_texture/cbox_xy00_s0.png" alt="w/ textrue" class="Images as Textures">
+                <img src="{{ base_path }}/images/Boxiang_rong/image_texture/cbox.png" alt="w/o textrue" class="Images as Textures">
+                <img src="{{ base_path }}/images/Boxiang_rong/image_texture/cbox_xy00_s0.png" alt="w/ textrue" class="Images as Textures">
             </div>
         </li><br><br>
         <li>
             <p>Tune parameters on sphere: We increase the x_offset and y_offset by 0.5 respectively (image in the middle and right), and compare with the default setting (image in the left).</p>
-            <img src="images/Boxiang_rong/image_texture/cbox_xy00_s0.png" width="330" alt="Motivation"/>
-            <img src="images/Boxiang_rong/image_texture/cbox_xy50_s0.png" width="330" alt="Motivation"/> 
-            <img src="images/Boxiang_rong/image_texture/cbox_xy05_s0.png" width="330" alt="Motivation"/>
+            <img src="{{ base_path }}/images/Boxiang_rong/image_texture/cbox_xy00_s0.png" width="330" alt="Motivation"/>
+            <img src="{{ base_path }}/images/Boxiang_rong/image_texture/cbox_xy50_s0.png" width="330" alt="Motivation"/> 
+            <img src="{{ base_path }}/images/Boxiang_rong/image_texture/cbox_xy05_s0.png" width="330" alt="Motivation"/>
         </li><br><br>
         <li>
             <p>Compare texture before and after scaling by 0.5</p>
             <div class="twentytwenty-container">
-                <img src="images/Boxiang_rong/image_texture/cbox_s1.png" alt="w/o scale" class="Images as Textures">
-                <img src="images/Boxiang_rong/image_texture/cbox_s5.png" alt="scale by 0.5" class="Images as Textures">
+                <img src="{{ base_path }}/images/Boxiang_rong/image_texture/cbox_s1.png" alt="w/o scale" class="Images as Textures">
+                <img src="{{ base_path }}/images/Boxiang_rong/image_texture/cbox_s5.png" alt="scale by 0.5" class="Images as Textures">
             </div> 
         </li>
     </font></ol>
@@ -113,8 +113,8 @@ author_profile: true
     <p><font size=4>Compare the Homogeneous sphere before and after applying perlin noise.
     </font></p>
     <div class="twentytwenty-container">
-        <img src="images/Boxiang_rong/perlin/cbox_base.png" alt="w/o perlin" class="Procedural volume">
-        <img src="images/Boxiang_rong/perlin/cbox_perlin.png" alt="w/ perlin" class="Procedural volume">
+        <img src="{{ base_path }}/images/Boxiang_rong/perlin/cbox_base.png" alt="w/o perlin" class="Procedural volume">
+        <img src="{{ base_path }}/images/Boxiang_rong/perlin/cbox_perlin.png" alt="w/ perlin" class="Procedural volume">
     </div>
     <br>
 
@@ -125,14 +125,14 @@ author_profile: true
     <ol>
         <li>
             <p><font size=4>Overview of all clouds in final scene:</font></p>
-            <img src="images/Boxiang_rong/meshes/overview.png" width="900" alt="Modeling meshes"/>
+            <img src="{{ base_path }}/images/Boxiang_rong/meshes/overview.png" width="900" alt="Modeling meshes"/>
         </li><br><br>
         <li>
             <p><font size=4>Detailed comparison between: mesh prototype in blender, rendered result in blender and our renderer.</font></p>
             <div class="twentytwenty-container">
-                <img src="images/Boxiang_rong/meshes/model.png" alt="mesh prototype" class="Modeling meshes">
-                <img src="images/Boxiang_rong/meshes/blender.png" alt="blender render" class="Modeling meshes">
-                <img src="images/Boxiang_rong/meshes/nori.png" alt="nori render" class="Modeling meshes">
+                <img src="{{ base_path }}/images/Boxiang_rong/meshes/model.png" alt="mesh prototype" class="Modeling meshes">
+                <img src="{{ base_path }}/images/Boxiang_rong/meshes/blender.png" alt="blender render" class="Modeling meshes">
+                <img src="{{ base_path }}/images/Boxiang_rong/meshes/nori.png" alt="nori render" class="Modeling meshes">
             </div>
         </li>
     </ol>
@@ -148,8 +148,8 @@ author_profile: true
     <p><font size=4>Compare two emitter texture with different radiance:
     </font></p>
     <div class="twentytwenty-container">
-        <img src="images/Boxiang_rong/texture_emitter/cbox_255.png" alt="radiance 255" class="Area Emitterse">
-        <img src="images/Boxiang_rong/texture_emitter/cbox_150.png" alt="radiance 150" class="Area Emitters">
+        <img src="{{ base_path }}/images/Boxiang_rong/texture_emitter/cbox_255.png" alt="radiance 255" class="Area Emitterse">
+        <img src="{{ base_path }}/images/Boxiang_rong/texture_emitter/cbox_150.png" alt="radiance 150" class="Area Emitters">
     </div>
     <br>
     <h3>5. Low Discrepancy Sampling - 10pts</h3>
@@ -166,10 +166,10 @@ author_profile: true
          And it's obvious that my ld_sampler has less noise to the further side of checkerboard.
     </font></p>
     <div class="twentytwenty-container">
-        <img src="images/Boxiang_rong/lowdiscrepany/nori_ind16.png" alt="nori independent" class="Low Discrepancy Sampling">
-        <img src="images/Boxiang_rong/lowdiscrepany/mitsuba_ind16.png" alt="mitsuba independent" class="Low Discrepancy Sampling">
-        <img src="images/Boxiang_rong/lowdiscrepany/nori_ld16.png" alt="my ld-sampler" class="Low Discrepancy Sampling">
-        <img src="images/Boxiang_rong/lowdiscrepany/mitsuba_ld16.png" alt="mitsuba ld-sampler" class="Low Discrepancy Sampling">
+        <img src="{{ base_path }}/images/Boxiang_rong/lowdiscrepany/nori_ind16.png" alt="nori independent" class="Low Discrepancy Sampling">
+        <img src="{{ base_path }}/images/Boxiang_rong/lowdiscrepany/mitsuba_ind16.png" alt="mitsuba independent" class="Low Discrepancy Sampling">
+        <img src="{{ base_path }}/images/Boxiang_rong/lowdiscrepany/nori_ld16.png" alt="my ld-sampler" class="Low Discrepancy Sampling">
+        <img src="{{ base_path }}/images/Boxiang_rong/lowdiscrepany/mitsuba_ld16.png" alt="mitsuba ld-sampler" class="Low Discrepancy Sampling">
     </div>
     <br>
     <h3>6. Environment Map Emitter - 15pts</h3>
@@ -191,12 +191,12 @@ author_profile: true
     <p><font size=4>Compare rendering results between the path_mats and path_mis under <code>indoor</code> and <code>night</code> conditions.
     </font></p>
     <div class="twentytwenty-container">
-        <img src="images/Boxiang_rong/envmap/mats_indoor.png" alt=" path_mats" class="Environment Map Emitter">
-        <img src="images/Boxiang_rong/envmap/mis_indoor.png" alt=" path_mis" class="Environment Map Emitter">
+        <img src="{{ base_path }}/images/Boxiang_rong/envmap/mats_indoor.png" alt=" path_mats" class="Environment Map Emitter">
+        <img src="{{ base_path }}/images/Boxiang_rong/envmap/mis_indoor.png" alt=" path_mis" class="Environment Map Emitter">
     </div>
     <div class="twentytwenty-container">
-        <img src="images/Boxiang_rong/envmap/mats_night.png" alt=" path_mats" class="Environment Map Emitter">
-        <img src="images/Boxiang_rong/envmap/mis_night.png" alt=" path_mis" class="Environment Map Emitter">
+        <img src="{{ base_path }}/images/Boxiang_rong/envmap/mats_night.png" alt=" path_mats" class="Environment Map Emitter">
+        <img src="{{ base_path }}/images/Boxiang_rong/envmap/mis_night.png" alt=" path_mis" class="Environment Map Emitter">
     </div>
     <br>
     <h3>7. Disney BSDF - 15pts</h3>
@@ -223,46 +223,46 @@ author_profile: true
     <ol>
         <li>
             <p><font size=4>metallic</font></p>
-            <img src="images/Boxiang_rong/disney/metallic.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/metallic.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>subsurface</font></p>
-            <img src="images/Boxiang_rong/disney/subsurface.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/subsurface.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>specular</font></p>
-            <img src="images/Boxiang_rong/disney/specular.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/specular.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>speculartint</font></p>
-            <img src="images/Boxiang_rong/disney/speculartint.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/speculartint.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>roughness</font></p>
-            <img src="images/Boxiang_rong/disney/roughness.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/roughness.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>sheen</font></p>
-            <img src="images/Boxiang_rong/disney/sheen.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/sheen.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>sheentint</font></p>
-            <img src="images/Boxiang_rong/disney/sheentint.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/sheentint.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>clearcoat</font></p>
-            <img src="images/Boxiang_rong/disney/clearcoat.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/clearcoat.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>clearcoatgloss</font></p>
-            <img src="images/Boxiang_rong/disney/clearcoatgloss.png" width="900" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/clearcoatgloss.png" width="900" alt="Disney BSDF"/>        
         </li><br>
         <li>
             <p><font size=4>Warptest: GTR1 & GTR2</font></p>
-            <img src="images/Boxiang_rong/disney/GTR1_sample.png" width="450" alt="Disney BSDF"/>        
-            <img src="images/Boxiang_rong/disney/GTR1_test.png" width="450" alt="Disney BSDF"/>    <br>    
-            <img src="images/Boxiang_rong/disney/GTR2_sample.png" width="450" alt="Disney BSDF"/>        
-            <img src="images/Boxiang_rong/disney/GTR2_test.png" width="450" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/GTR1_sample.png" width="450" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/GTR1_test.png" width="450" alt="Disney BSDF"/>    <br>    
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/GTR2_sample.png" width="450" alt="Disney BSDF"/>        
+            <img src="{{ base_path }}/images/Boxiang_rong/disney/GTR2_test.png" width="450" alt="Disney BSDF"/>        
         </li><br>
     </ol>
 
@@ -310,20 +310,20 @@ author_profile: true
     </ol>
     <p>Homogeneous media with only scattering (sigma_a=<0,0,0>, sigma_s=<2,2,2>)</p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/cbox_homo_media_000222_mine.png" alt="mine (256spp)" class="img-responsive">
-        <img src="images/ziyao_val/cbox_homo_media_000222_mitsuba.png" alt="mitsuba(128spp)" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_homo_media_000222_mine.png" alt="mine (256spp)" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_homo_media_000222_mitsuba.png" alt="mitsuba(128spp)" class="img-responsive">
     </div> <br>
 
     <p>Homogeneous media with only absorption (sigma_a=<2,2,2>, sigma_s=<0,0,0>)</p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/cbox_homo_media_222000_mine.png" alt="mine (256spp)" class="img-responsive">
-        <img src="images/ziyao_val/cbox_homo_media_222000_mitsuba.png" alt="mitsuba (128spp)" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_homo_media_222000_mine.png" alt="mine (256spp)" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_homo_media_222000_mitsuba.png" alt="mitsuba (128spp)" class="img-responsive">
     </div> <br>
 
     <p>Homogeneous media with color, absorption, and scattering sigma_a=<1,4,1>, sigma_s=<4,1,4></p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/cbox_homo_media_141414_mine.png" alt="mine (256spp)" class="img-responsive">
-        <img src="images/ziyao_val/cbox_homo_media_141414_mitsuba.png" alt="mitsuba (256spp)" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_homo_media_141414_mine.png" alt="mine (256spp)" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_homo_media_141414_mitsuba.png" alt="mitsuba (256spp)" class="img-responsive">
     </div> <br>
 
     <h3>Heterogeneous Volumetric Participating Media (incl. homogeneous media) - 30pts</h3>
@@ -361,23 +361,23 @@ author_profile: true
     </ol>
     <p>When all grids contain density=1, the media is the same as a homogeneous media </p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/compare_to_thinness_1.png" alt="homogeneous media" class="img-responsive">
-        <img src="images/ziyao_val/thinness_1.png" alt="heterogeneous density=1" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/compare_to_thinness_1.png" alt="homogeneous media" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/thinness_1.png" alt="heterogeneous density=1" class="img-responsive">
     </div> <br>
 
     <p>when we set an exponential decay to the density according to the sphere(sigma_a=<1,4,1>, sigma_s=<0,0,0>)'s coordinates' distance towards the right
         edge, we get </p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/cbox_path_media_hetro_decay_orig.png" alt="homogeneous media" class="img-responsive">
-        <img src="images/ziyao_val/cbox_path_media_hetro_decay.png" alt="heterogeneous decay" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_path_media_hetro_decay_orig.png" alt="homogeneous media" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/cbox_path_media_hetro_decay.png" alt="heterogeneous decay" class="img-responsive">
     </div> <br>
 
     <p>Since my grid entries are Color3f values instead of integers, I could fill in the density separately for each
         channel. Applying an exponential function to different channels according to the distance towards the center for
         each dimension would yield:</p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/rainbow_decay_compare_111000_homo.png" alt="homogeneous media" class="img-responsive">
-        <img src="images/ziyao_val/rainbow2.png" alt="channel/dimension-based decay" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/rainbow_decay_compare_111000_homo.png" alt="homogeneous media" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/rainbow2.png" alt="channel/dimension-based decay" class="img-responsive">
     </div> <br>
 
     <h3>Anisotropic phase function - 5pts </h3>
@@ -399,20 +399,20 @@ author_profile: true
         <li> <code>validation/PF_baseline_131313.xml</code></li>
     </ol>
     <p>
-        <img src="images/ziyao_val/wptest_g_pos_dist.png" width="350" alt="g_pos_d"/>
-        <img src="images/ziyao_val/wptest_g_0_dist.png" width="350" alt="g_0_d"/>
-        <img src="images/ziyao_val/wptest_g_neg_dist.png" width="350" alt="g_neg_d">
+        <img src="{{ base_path }}/images/ziyao_val/wptest_g_pos_dist.png" width="350" alt="g_pos_d"/>
+        <img src="{{ base_path }}/images/ziyao_val/wptest_g_0_dist.png" width="350" alt="g_0_d"/>
+        <img src="{{ base_path }}/images/ziyao_val/wptest_g_neg_dist.png" width="350" alt="g_neg_d">
     </p>
     <p>
-        <img src="images/ziyao_val/wptest_g_pos_chi2.png" width="350" alt="g_pos_ch2"/>
-        <img src="images/ziyao_val/wptest_g_0_chi2.png" width="350" alt="g_0_ch2"/>
-        <img src="images/ziyao_val/wptest_g_neg_chi2.png" width="350" alt="g_neg_ch2"/>
+        <img src="{{ base_path }}/images/ziyao_val/wptest_g_pos_chi2.png" width="350" alt="g_pos_ch2"/>
+        <img src="{{ base_path }}/images/ziyao_val/wptest_g_0_chi2.png" width="350" alt="g_0_ch2"/>
+        <img src="{{ base_path }}/images/ziyao_val/wptest_g_neg_chi2.png" width="350" alt="g_neg_ch2"/>
     </p>
     <br>
     <p>Comparing a homogenuous media (sigma_a=<1,3,1>, sigma_s=<3,1 3>) with/without Anisotropic scattering (g=0.9)</p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/PF_baseline_131313.png" alt="no phase function" class="img-responsive">
-        <img src="images/ziyao_val/PF_1_131313.png" alt="phase function" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/PF_baseline_131313.png" alt="no phase function" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/PF_1_131313.png" alt="phase function" class="img-responsive">
     </div> <br>
 
     <h3>Emissive participating media - 10pts</h3>
@@ -429,8 +429,8 @@ author_profile: true
         <a href="https://graphics.pixar.com/library/MISEmissive/paper.pdf">technical memo</a> from Pixar. MIS sampling is used
         and the emitter is sampled both outside the media and side the media. Specifically, the equation for ems sampling is
         on the left and the equation for brdf sampling is on the right.<br>
-        <img src="images/ziyao_val/emissive_ems_equi.png" width="350" alt="emissive_ems_eq"/>
-        <img src="images/ziyao_val/emissive_brdf_equi.png" width="350" alt="emissive_mats_eq"/><br>
+        <img src="{{ base_path }}/images/ziyao_val/emissive_ems_equi.png" width="350" alt="emissive_ems_eq"/>
+        <img src="{{ base_path }}/images/ziyao_val/emissive_brdf_equi.png" width="350" alt="emissive_mats_eq"/><br>
         Here, <i>f()</i> is the bsdf, <i>G()</i> is the visibility divided by the distance between the two points.
         <i>p()</i> is the possibility of the value inserted being sampled. <i>tao()</i> is the transmittance. <i>Epsilon</i>
         is the volumetric emission. <i>vis()</i> is the geometric visibility.
@@ -446,15 +446,15 @@ author_profile: true
     </ol>
     <p>Here, we compare the difference between making the same media emissive/non-emissive</p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/rainbow_decay_compare_111000_homo.png" alt="non-emissive" class="img-responsive">
-        <img src="images/ziyao_val/emissive_light_on_111000_10,50.png" alt="emissive" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/rainbow_decay_compare_111000_homo.png" alt="non-emissive" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/emissive_light_on_111000_10,50.png" alt="emissive" class="img-responsive">
     </div> <br>
 
     <p>Here, we compare the difference between sampling the area emitter + emissive media and sampling only the emissive
         media (with a solid diffuse ball in the middle)</p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/emissive_light_off_111111_00,51.png" alt="lights_off" class="img-responsive">
-        <img src="images/ziyao_val/emissive_light_on_111111_00,51.png" alt="lights_on" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/emissive_light_off_111111_00,51.png" alt="lights_off" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/emissive_light_on_111111_00,51.png" alt="lights_on" class="img-responsive">
     </div> <br>
 
     <h3>Spotlight emitter - 5pts</h3>
@@ -476,9 +476,9 @@ author_profile: true
     </ol>
     <p>Here, with a total width of 20 degrees, let's see the differences of fallout values of 0, 10, and 20 degrees. </p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/spot_width20_fallout_10.png" alt="fallout=10" class="img-responsive">
-        <img src="images/ziyao_val/spot_width_same_fallout.png" alt="fallout=20" class="img-responsive">
-        <img src="images/ziyao_val/spot_width20_fallout_0.png" alt="fallout=0" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/spot_width20_fallout_10.png" alt="fallout=10" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/spot_width_same_fallout.png" alt="fallout=20" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/spot_width20_fallout_0.png" alt="fallout=0" class="img-responsive">
     </div> <br>
 
 
@@ -500,16 +500,16 @@ author_profile: true
     <p>Here, I placed a point light source inside a spherical medium and recorded the different effects of <i>a</i> and
     <i>b</i> using a step_size of 0.005.</p>
     <div class="twentytwenty-container">
-        <img src="images/ziyao_val/equi_0_01_.png" alt="a=-0.01, b=0.01" class="img-responsive">
-        <img src="images/ziyao_val/equi_0_02.png" alt="a=-0.02, b=0.02" class="img-responsive">
-        <img src="images/ziyao_val/equi_0_03.png" alt="a=-0.03, b=0.03" class="img-responsive">
-        <img src="images/ziyao_val/equi_0_04.png" alt="a=-0.04, b=0.04" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/equi_0_01_.png" alt="a=-0.01, b=0.01" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/equi_0_02.png" alt="a=-0.02, b=0.02" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/equi_0_03.png" alt="a=-0.03, b=0.03" class="img-responsive">
+        <img src="{{ base_path }}/images/ziyao_val/equi_0_04.png" alt="a=-0.04, b=0.04" class="img-responsive">
     </div> <br>
 
 
 
     <h2>4 Final scene</h2>
-    <img src="images/motivation/final_image.png" width="990" alt="Final scene"/>
+    <img src="{{ base_path }}/images/motivation/final_image.png" width="990" alt="Final scene"/>
     <p><font size=4>The majority of our scene are covered with clouds. To model the thickness of clouds and randomly distributed surface, we first use <code>Homogeneous volume</code> to model the cloud base. Then, we apply perlin noise to the cloud crust, which generates a heterogeneous cloud debris. <br>
         We use four light sources in total: one environment map to simulate the galaxy; one area light to model the shiny "goddess" planet; and two directional light put in both front and back to maintain the scene in good lighting condition. The boat, whales and snow mountains leverage texture mapping and disney BSDF. Since this scene is pretty time comsuming to render, we only set spp as 16 to get this result. </font></p>
     <br>
@@ -519,9 +519,9 @@ author_profile: true
 
 <!-- Bootstrap core JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="resources_RenderCompetition/bootstrap.min.js"></script>
-<script src="resources_RenderCompetition/jquery.event.move.js"></script>
-<script src="resources_RenderCompetition/jquery.twentytwenty.js"></script>
+<script src="{{ base_path }}/resources_RenderCompetition/bootstrap.min.js"></script>
+<script src="{{ base_path }}/resources_RenderCompetition/jquery.event.move.js"></script>
+<script src="{{ base_path }}/resources_RenderCompetition/jquery.twentytwenty.js"></script>
 
 
 <script>
