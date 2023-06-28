@@ -61,7 +61,7 @@ Main Contributions:
 
 ## Priority Labeling in The Scenarios of Self-Driving
 <strong>Boxiang Rong</strong>, [Hang Zhao](https://hangzhaomit.github.io/)  
-Research project in Shanghai [Qi Zhi Institute](https://sqz.ac.cn/en) 2022  
+Research project in Shanghai [Qizhi AI Lab](https://sqz.ac.cn/en) 2022  
 [[Code](https://github.com/Ribosome-rbx/detmetric)][[Slides](https://docs.google.com/presentation/d/1IhTVg7qeNFhnkSjIlrXehNOPWBuDZcuHGkt0_8GhFJ0/edit?usp=sharing)]   
 <img src="../images/drive.gif" alt="Project Profile" width="600px">
 

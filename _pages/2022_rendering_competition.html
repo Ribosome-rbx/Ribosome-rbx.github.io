@@ -1,0 +1,532 @@
+---
+layout: archive
+title: "ETH 2022 Rendering Competition"
+permalink: /2022_rendering_competition/
+excerpt: "Report of our final project in ETH 2022 Rendering Competition"
+author_profile: true
+---
+
+{% include base_path %}
+
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Final Project - Boxiang Rong & Ziyao Shang</title>
+
+    <link href="resources/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/offcanvas.css" rel="stylesheet">
+    <link href="resources/custom2014.css" rel="stylesheet">
+    <link href="resources/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container headerBar">
+		<h1>Final Project - Boxiang Rong & Ziyao Shang</h1>
+</div>
+
+<div class="container contentWrapper">
+<div class="pageContent">
+
+	<!-- ================================================================= -->
+
+	<h2>1 Motivation</h2>
+
+	<p><font size=4>Theme: <b>Out of Place</b></font></p>
+    <p><font size=4>Our inspiration comes from the anime movie <a href="https://www.imdb.com/title/tt1920885/">Big Fish & Begonia</a> based on the story of K'un, a huge fish flying in the universe,
+        from an ancient Chinese literature <a href="https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1">A Happy Excursion.</a></font>
+    </p>
+    <img src="images/motivation/motivation1.jpg" width="520" alt="Motivation"/>
+    <img src="images/motivation/motivation2.jpg" width="520" alt="Motivation"/> 
+    <br> <br>
+    <p><font size=4>We want to build an imaginary scene about a sky boat sailing to explore the mysterious fields where K'un appears. 
+        In accordance to the theme of this rendering competition--“out of place”, instead of the ocean, our boat will be sailing across the clouds and surrounded by a background full of galaxy, from afar. 
+        In the center of the background lies a huge moon. </font>
+    </p>
+    <br>
+
+	<!-- ================================================================= -->
+
+	<h2>2 Boxiang's Implementation</h2>
+	<h3>Feature List: </h3>
+    <ol><font size=4>
+        <li>images as textures (No 5.3)</li>
+        <li> Procedural volumes (No 5.5)</li>
+        <li>Modeling meshes (No 5.20)</li>
+        <li>Textured Area Emitters (No 5.11)</li>
+        <li>Low Discrepancy Sampling (should work beyond sampling on the image plane)(No 10.5)</li>
+        <li>Environment Map Emitter (No 15.3)</li>
+        <li>Disney BSDF (No 15.5)</li>
+        Parameters to be graded: "subsurface, specular, roughness, metallic, clearcoat"
+    </font></ol>
+
+    <h3>1. Images as Textures - 5pts</h3>
+	<p><font size=4>Outside Dependencies: <code>./include/nori/lodepng.h</code> <code>./src/lodepng.cpp</code></font></p>
+	<p><font size=4>Modified files: <code>./src/imagetexture.cpp</code> <code>./include/nori/emitter.h</code> </font></p>
+    <p><font size=4>We have all of our texture images stored in the <code>./textrues</code> folder. When initializing a texture object, 
+        we first use <a href="https://github.com/lvandeve/lodepng/blob/7fdcc96a5e5864eee72911c3ca79b1d9f0d12292/examples/example_decode.cpp">lodepng</a> to load image. 
+        Then, in <code>eval()</code>, we project the input uv coordinates onto the image and find out corresponding value. Meanwhile, I added "x_offset, y_offset" to move textrue image around, and a "scale" parameter to scale texture size.
+    </font></p>
+
+	<p><font size=4><b>Validations: </b></font></p>
+    <ol><font size=4>
+        <li>
+            <p>Compare model with and without textrue mapping</p>
+            <div class="twentytwenty-container">
+                <img src="images/Boxiang_rong/image_texture/cbox.png" alt="w/o textrue" class="Images as Textures">
+                <img src="images/Boxiang_rong/image_texture/cbox_xy00_s0.png" alt="w/ textrue" class="Images as Textures">
+            </div>
+        </li><br><br>
+        <li>
+            <p>Tune parameters on sphere: We increase the x_offset and y_offset by 0.5 respectively (image in the middle and right), and compare with the default setting (image in the left).</p>
+            <img src="images/Boxiang_rong/image_texture/cbox_xy00_s0.png" width="330" alt="Motivation"/>
+            <img src="images/Boxiang_rong/image_texture/cbox_xy50_s0.png" width="330" alt="Motivation"/> 
+            <img src="images/Boxiang_rong/image_texture/cbox_xy05_s0.png" width="330" alt="Motivation"/>
+        </li><br><br>
+        <li>
+            <p>Compare texture before and after scaling by 0.5</p>
+            <div class="twentytwenty-container">
+                <img src="images/Boxiang_rong/image_texture/cbox_s1.png" alt="w/o scale" class="Images as Textures">
+                <img src="images/Boxiang_rong/image_texture/cbox_s5.png" alt="scale by 0.5" class="Images as Textures">
+            </div> 
+        </li>
+    </font></ol>
+    <br>
+
+    <h3>2. Procedural volumes - 5pts</h3>
+	<p><font size=4>Modified files: <code>./src/noise.cpp</code> <code>./include/nori/grid.h</code> <code>./include/nori/noise.h</code></font></p>
+    <p><font size=4> We build a three-dimensional perlin noise to generate procedural volumes. With heterogeneous volume divided into solid grids, for any interested point in the space, we can find the unique grid cell in which the point lies. 
+        Then, we generate a random vector for each vertex. The dot product between this random vector and vector from vertex to interested point is used to weight each vertex. Then, apply a smooth function <code>NoiseWeight</code> to ensure the 1st and 2nd derivative continuity of noise function. Finally, we implement a three dimensional interpolation among the eight weights to get the noise value.
+        We use <code>clamp</code> to rescale the noise value within (0,1), which in turn adjusts the Homogeneous density.
+    </font></p> 
+    
+    <p><font size=4><b>Validations: </b></font></p>
+    <p><font size=4>Compare the Homogeneous sphere before and after applying perlin noise.
+    </font></p>
+    <div class="twentytwenty-container">
+        <img src="images/Boxiang_rong/perlin/cbox_base.png" alt="w/o perlin" class="Procedural volume">
+        <img src="images/Boxiang_rong/perlin/cbox_perlin.png" alt="w/ perlin" class="Procedural volume">
+    </div>
+    <br>
+
+    <h3>3. Modeling meshes - 5pts</h3>
+	<p><font size=4> In our final scene, we use a lot of cloud models, which are usually versatile. It's hard to find available models online to fit in our scene perfectly.
+        Therefore, I use blender to build all the cloud meshes. Special acknowledgement to the <a href="https://www.youtube.com/watch?v=pYa5q0a7INM&feature=share">Blender tutorial</a> on Youtube.
+    </font></p>
+    <ol>
+        <li>
+            <p><font size=4>Overview of all clouds in final scene:</font></p>
+            <img src="images/Boxiang_rong/meshes/overview.png" width="900" alt="Modeling meshes"/>
+        </li><br><br>
+        <li>
+            <p><font size=4>Detailed comparison between: mesh prototype in blender, rendered result in blender and our renderer.</font></p>
+            <div class="twentytwenty-container">
+                <img src="images/Boxiang_rong/meshes/model.png" alt="mesh prototype" class="Modeling meshes">
+                <img src="images/Boxiang_rong/meshes/blender.png" alt="blender render" class="Modeling meshes">
+                <img src="images/Boxiang_rong/meshes/nori.png" alt="nori render" class="Modeling meshes">
+            </div>
+        </li>
+    </ol>
+    <br>
+
+    <h3>4. Textured Area Emitters - 5pts</h3>
+	<p><font size=4>Modified files: <code>./src/arealight.cpp</code> <code>./include/nori/emitter.h</code><code>./src/imagetexture.cpp</code></font></p>
+    <p><font size=4> In arealight, we use <code>addChild</code> to construct the textrue instance. Then, we can use the same method as "Image as Texture" to search for color with uv mapping.
+        Once find a texture color, the origional radiance value will be used to scale the intensity of emitted light.
+    </font></p> 
+    <br>
+    <p><font size=4><b>Validations: </b></font></p>
+    <p><font size=4>Compare two emitter texture with different radiance:
+    </font></p>
+    <div class="twentytwenty-container">
+        <img src="images/Boxiang_rong/texture_emitter/cbox_255.png" alt="radiance 255" class="Area Emitterse">
+        <img src="images/Boxiang_rong/texture_emitter/cbox_150.png" alt="radiance 150" class="Area Emitters">
+    </div>
+    <br>
+    <h3>5. Low Discrepancy Sampling - 10pts</h3>
+	<p><font size=4>Modified files: <code>./src/lowdiscrepancy.cpp</code> <code>./src/render.cpp</code> <code> ./include/nori/sampler.h</code></font></p>
+    <p><font size=4> The low_discrepancy sampling here is mainly based on the Quasi-Monte Carlo sequence. To make even distribution easier, we first round the <code>sampleCount</code> to be a perfect square. 
+        Before sampling, we initialize 2D-array of size <code>[maxDimension,sampleCount]</code> to store QMC sequence, which will be generated on the fly while rendering.<br>
+         Everytime when we start to sample a new pixel, we call <code>generate()</code> to compute a maxDimension long of QMC sequence, and make sampleIndex and dimension zero.
+        Everytime we generate a new sample, we call <code>advance()</code>, which add sampleIndex by one, and make dimension zero. In <code>next1D()</code><code>next2D()</code>,with sampleIndex and dimension, we search for the random number that we generated in advance, and increase <code>dimension</code> before return.
+        Once the dimensions are used up, we turn back to pcg32 instance, which generates random values instantly without any preprocess, but is not low-discrepancy.
+    </font></p> 
+    <br>
+    <p><font size=4><b>Validations: </b></font></p>
+    <p><font size=4>Compare my low_discrepancy image with nori independent method, mitsuba independent and ld-sampler. For all four scenes, I use <code>spp=16</code>.
+         And it's obvious that my ld_sampler has less noise to the further side of checkerboard.
+    </font></p>
+    <div class="twentytwenty-container">
+        <img src="images/Boxiang_rong/lowdiscrepany/nori_ind16.png" alt="nori independent" class="Low Discrepancy Sampling">
+        <img src="images/Boxiang_rong/lowdiscrepany/mitsuba_ind16.png" alt="mitsuba independent" class="Low Discrepancy Sampling">
+        <img src="images/Boxiang_rong/lowdiscrepany/nori_ld16.png" alt="my ld-sampler" class="Low Discrepancy Sampling">
+        <img src="images/Boxiang_rong/lowdiscrepany/mitsuba_ld16.png" alt="mitsuba ld-sampler" class="Low Discrepancy Sampling">
+    </div>
+    <br>
+    <h3>6. Environment Map Emitter - 15pts</h3>
+	<p><font size=4>Modified files: 
+        <ol>
+            <li><code>./src/envmap.cpp</code>(new)</li>
+            <li><code>./src/path_mis.cpp</code>(modified)</li>
+            <li><code>./src/media_path.cpp</code>(modified)</li>
+            <li><code>./include/nori/scene.h</code>(modified)</li>
+            <li><code>./include/nori/emitter.h</code>(modified)</li>
+        </ol>
+    </font></p>
+    <p><font size=4> Instead of attaching envmap onto a sphere, we use <code>scene->getBoundingBox()</code> to help construct the biggest sphere within box, which is not mesh_based and make it possible to use directional light together with envmap.<br>
+        we apply mulit-importance sampling to environment map. For each pixel, we compute the pdf and cdf along rows and columns based on the luminance value. As a result, bright zones have higher possibilities to get sampled. In <code>eval()</code>, I use binary search to find surrounding 4 pixels on uv plane. Then, apply bilinear interpolation to compute the returned color.
+        In <code>sample()</code>, we just sample equally on uv plane and map back to spherical surface.
+    </font></p> 
+    <br>
+    <p><font size=4><b>Validations: </b></font></p>
+    <p><font size=4>Compare rendering results between the path_mats and path_mis under <code>indoor</code> and <code>night</code> conditions.
+    </font></p>
+    <div class="twentytwenty-container">
+        <img src="images/Boxiang_rong/envmap/mats_indoor.png" alt=" path_mats" class="Environment Map Emitter">
+        <img src="images/Boxiang_rong/envmap/mis_indoor.png" alt=" path_mis" class="Environment Map Emitter">
+    </div>
+    <div class="twentytwenty-container">
+        <img src="images/Boxiang_rong/envmap/mats_night.png" alt=" path_mats" class="Environment Map Emitter">
+        <img src="images/Boxiang_rong/envmap/mis_night.png" alt=" path_mis" class="Environment Map Emitter">
+    </div>
+    <br>
+    <h3>7. Disney BSDF - 15pts</h3>
+	<p><font size=4>Modified files: <code>./src/disneyBSDF.cpp</code> <code>./src/render.cpp</code> <code> ./include/nori/sampler.h</code></font></p>
+    <p><font size=4> Our implementation covers four components of Disney BSDF: diffuse, clearcoat, metallic and sheen. The diffuse lobe depicts the base diffusive color of the
+        surface. The clearcoat lobe models the heavy tails of specularity. The metallic lobe features major specular highlights. The sheen lobe that addresses retroreflection on diffusive surface.
+    </font></p> 
+    <br>
+    <p><font size=4><b>Default setting: </b></font></p>
+    <code>
+        m_sheen = 0.f; <br>
+        m_sheentint = 0.5f;<br>
+        m_clearcoat = 0.f;<br>
+        m_clearcoatGloss = 0.03f;<br>
+        m_anisotropic = 0.f;<br>
+        m_roughness = 0.5f;   <br>
+        m_specular = 0.5f;<br>
+        m_speculartint = 0.f;<br>
+        m_metallic = 0.f;<br>
+        m_subsurface = 0.f;<br>
+    </code>
+    <p><font size=4><b>Validations: </b></font></p>
+    <p><font size=4>In the following experiments, for test-balls from left to right, we change the selected parameter into <code>0/0.2/0.4/0.6/0.8/1.0</code> respectively.</font></p>
+    <ol>
+        <li>
+            <p><font size=4>metallic</font></p>
+            <img src="images/Boxiang_rong/disney/metallic.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>subsurface</font></p>
+            <img src="images/Boxiang_rong/disney/subsurface.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>specular</font></p>
+            <img src="images/Boxiang_rong/disney/specular.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>speculartint</font></p>
+            <img src="images/Boxiang_rong/disney/speculartint.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>roughness</font></p>
+            <img src="images/Boxiang_rong/disney/roughness.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>sheen</font></p>
+            <img src="images/Boxiang_rong/disney/sheen.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>sheentint</font></p>
+            <img src="images/Boxiang_rong/disney/sheentint.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>clearcoat</font></p>
+            <img src="images/Boxiang_rong/disney/clearcoat.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>clearcoatgloss</font></p>
+            <img src="images/Boxiang_rong/disney/clearcoatgloss.png" width="900" alt="Disney BSDF"/>        
+        </li><br>
+        <li>
+            <p><font size=4>Warptest: GTR1 & GTR2</font></p>
+            <img src="images/Boxiang_rong/disney/GTR1_sample.png" width="450" alt="Disney BSDF"/>        
+            <img src="images/Boxiang_rong/disney/GTR1_test.png" width="450" alt="Disney BSDF"/>    <br>    
+            <img src="images/Boxiang_rong/disney/GTR2_sample.png" width="450" alt="Disney BSDF"/>        
+            <img src="images/Boxiang_rong/disney/GTR2_test.png" width="450" alt="Disney BSDF"/>        
+        </li><br>
+    </ol>
+
+    <h2>3 Ziyao's Implementation</h2>
+    <h3>Feature List: </h3>
+    <ol>
+        <li>Transmittance in Homogeneous Media (Beer’s Law) (5.15)</li>
+        <li>Homogeneous Participating Media (with integrator of choice, e.g. Photon Mapping or Path Tracing) (No 15.4)</li>
+        <li>Heterogeneous Volumetric Participating Media (No 30.1)</li>
+        <li>Anisotropic phase function (No 5.16)</li>
+        <li>Emissive participating media (No 10.7)</li>
+        <li>Simple Extra Emitters (spotlight) (No 5.10)</li>
+        <li>Equiangular sampling (No 10.6)</li>
+
+    </ol>
+
+
+    <h3>Homogeneous Participating Media (incl. Beer's law) - 15pts</h3>
+	<p>Modified files:</p>
+        <ol>
+            <li> <code>include/shape.h </code>(modified)</li>
+            <li> <code>include/object.h </code>(modified)</li>
+            <li> <code>include/media.h </code>(new)</li>
+            <li> <code>include/mediarecord.h </code>(new)</li>
+            <li> <code>src/h_media.cpp </code>(new)</li>
+            <li> <code>src/media_path.cpp </code>(new)</li>
+            <li> <code>src/shape.cpp </code>(modified)</li>
+            <li> <code>src/mediaBSDF.cpp </code>(new)</li>
+        </ol>
+    <p>
+        I implemented a medium-aware path-tracer integrator using the sudo-code on the
+        <a href="https://moodle-app2.let.ethz.ch/pluginfile.php/1449689/mod_resource/content/2/14-participating-media-I.pdfΩ">course slide (page 116)</a>,
+        where interactions within the media are divided into either a surface interaction or a media interaction.
+        My media is attached to a shape, which has a BSDF that directs the ray into the media without any change of direction.
+        The media allows user-specified values for each channel of the absorbance (sigma_a) and scattering (sigma_s).
+
+        For all the validations, isotropic scattering is used.
+    </p>
+    <h4>Validations</h4>
+    <p>Related scenes:</p>
+    <ol>
+        <li> <code>validation/cbox_homo_media_000222_mine.xml</code></li>
+        <li> <code>validation/cbox_homo_media_222000_mine.xml</code></li>
+        <li> <code>validation/cbox_homo_media_141414_mine.xml</code></li>
+    </ol>
+    <p>Homogeneous media with only scattering (sigma_a=<0,0,0>, sigma_s=<2,2,2>)</p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/cbox_homo_media_000222_mine.png" alt="mine (256spp)" class="img-responsive">
+        <img src="images/ziyao_val/cbox_homo_media_000222_mitsuba.png" alt="mitsuba(128spp)" class="img-responsive">
+    </div> <br>
+
+    <p>Homogeneous media with only absorption (sigma_a=<2,2,2>, sigma_s=<0,0,0>)</p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/cbox_homo_media_222000_mine.png" alt="mine (256spp)" class="img-responsive">
+        <img src="images/ziyao_val/cbox_homo_media_222000_mitsuba.png" alt="mitsuba (128spp)" class="img-responsive">
+    </div> <br>
+
+    <p>Homogeneous media with color, absorption, and scattering sigma_a=<1,4,1>, sigma_s=<4,1,4></p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/cbox_homo_media_141414_mine.png" alt="mine (256spp)" class="img-responsive">
+        <img src="images/ziyao_val/cbox_homo_media_141414_mitsuba.png" alt="mitsuba (256spp)" class="img-responsive">
+    </div> <br>
+
+    <h3>Heterogeneous Volumetric Participating Media (incl. homogeneous media) - 30pts</h3>
+    <p>Modified files:</p>
+    <ol>
+        <li> <code>include/media.h </code>(modified)</li>
+        <li> <code>include/grid.h </code>(new)</li>
+        <li> <code>src/h_media.cpp </code>(modified)</li>
+        <li> <code>src/media_path.cpp </code>(modified)</li>
+        <li> <code>src/shape.cpp </code>(modified)</li>
+    </ol>
+
+    <p>
+        For heterogeneous participating media, I implemented a grid density media inspired by
+        <a href="https://www.pbr-book.org/3ed-2018/Volume_Scattering/Media#x3DGrids">the pbrt textbook</a>.
+        The grid is implemented as a 3D std::Vector with user-defined dimensions "voxels_yzx", these voxels are
+        stretched along the user-defined boundaries "upperBounds_yzx" and "lowerBounds_yzx" inside the scene.
+        The std::Vector contain Color3f data types, representing the thinness (1/density) of each channel at each grid point.
+        The transmittance and free-path sampling are implemented with ray-marching, where free path sampling implements
+        the method in page 118 of the <a href="https://moodle-app2.let.ethz.ch/pluginfile.php/1452153/mod_resource/content/1/15-participating-media-II.pdf">course slides</a>
+        with a step size of 0.02 and the transmission calculation implemented the equation in page 89 in the same slides
+        with a 0.02 step size. The transmittance, in this case, would be exp(-sigma_t*step_size/grid.get()). <b>The
+        heterogeneous is also used in Boxiang's procedural volume, which could serve as an additional validation.</b>
+    </p>
+
+    <h4>Validations</h4>
+    <p>Related scenes:</p>
+    <ol>
+        <li> <code>validation/compare_to_thinness_1.xml</code></li>
+        <li> <code>validation/thinness_1.xml</code><i>note: important instructions on line 58.</i></li>
+        <li> <code>validation/cbox_path_media_hetro_decay_orig.xml</code></li>
+        <li> <code>validation/cbox_path_media_hetro_decay.xml</code> <i>note: important instructions on line 58.</i> </li>
+        <li> <code>validation/rainbow_decay_compare_111000_homo.xml</code></li>
+        <li> <code>validation/rainbow2.xml</code><i>note: important instructions on page 58.</i></li>
+    </ol>
+    <p>When all grids contain density=1, the media is the same as a homogeneous media </p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/compare_to_thinness_1.png" alt="homogeneous media" class="img-responsive">
+        <img src="images/ziyao_val/thinness_1.png" alt="heterogeneous density=1" class="img-responsive">
+    </div> <br>
+
+    <p>when we set an exponential decay to the density according to the sphere(sigma_a=<1,4,1>, sigma_s=<0,0,0>)'s coordinates' distance towards the right
+        edge, we get </p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/cbox_path_media_hetro_decay_orig.png" alt="homogeneous media" class="img-responsive">
+        <img src="images/ziyao_val/cbox_path_media_hetro_decay.png" alt="heterogeneous decay" class="img-responsive">
+    </div> <br>
+
+    <p>Since my grid entries are Color3f values instead of integers, I could fill in the density separately for each
+        channel. Applying an exponential function to different channels according to the distance towards the center for
+        each dimension would yield:</p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/rainbow_decay_compare_111000_homo.png" alt="homogeneous media" class="img-responsive">
+        <img src="images/ziyao_val/rainbow2.png" alt="channel/dimension-based decay" class="img-responsive">
+    </div> <br>
+
+    <h3>Anisotropic phase function - 5pts </h3>
+    <p>Modified files:</p>
+    <ol>
+        <li> <code>src/h_media.cpp </code>(modified)</li>
+        <li> <code>src/warptest.cpp </code>(modified)</li>
+        <li> <code>src/warp.cpp </code>(modified)</li>
+        <li> <code>include/warp.h </code>(modified)</li>
+    </ol>
+    Using the <a href="https://moodle-app2.let.ethz.ch/pluginfile.php/1449689/mod_resource/content/2/14-participating-media-I.pdf">equation (slide 42)</a>  and its derivatives from
+    <a href="https://www.astro.umd.edu/~jph/HG_note.pdf">UMD (page 2)</a> and
+    <a href="https://www.csie.ntu.edu.tw/~cyy/courses/rendering/09fall/lectures/handouts/chap17_volume_4up.pdf">NTU (page 5)</a>,
+    I implemented the exact form of the Henyey-Greenstein phase function and added it to warptest.
+    <h4>Validations</h4>
+    <p>Related scenes:</p>
+    <ol>
+        <li> <code>validation/PF_1_131313.xml</code></li>
+        <li> <code>validation/PF_baseline_131313.xml</code></li>
+    </ol>
+    <p>
+        <img src="images/ziyao_val/wptest_g_pos_dist.png" width="350" alt="g_pos_d"/>
+        <img src="images/ziyao_val/wptest_g_0_dist.png" width="350" alt="g_0_d"/>
+        <img src="images/ziyao_val/wptest_g_neg_dist.png" width="350" alt="g_neg_d">
+    </p>
+    <p>
+        <img src="images/ziyao_val/wptest_g_pos_chi2.png" width="350" alt="g_pos_ch2"/>
+        <img src="images/ziyao_val/wptest_g_0_chi2.png" width="350" alt="g_0_ch2"/>
+        <img src="images/ziyao_val/wptest_g_neg_chi2.png" width="350" alt="g_neg_ch2"/>
+    </p>
+    <br>
+    <p>Comparing a homogenuous media (sigma_a=<1,3,1>, sigma_s=<3,1 3>) with/without Anisotropic scattering (g=0.9)</p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/PF_baseline_131313.png" alt="no phase function" class="img-responsive">
+        <img src="images/ziyao_val/PF_1_131313.png" alt="phase function" class="img-responsive">
+    </div> <br>
+
+    <h3>Emissive participating media - 10pts</h3>
+    <p>Modified files:</p>
+    <ol>
+        <li> <code>include/media.h </code>(modified)</li>
+        <li> <code>include/scene.h </code>(modified)</li>
+        <li> <code>src/scene.cpp </code>(modified)</li>
+        <li> <code>src/h_media.cpp </code>(modified)</li>
+        <li> <code>src/media_emissive.cpp </code>(new)</li>
+    </ol>
+    <p>
+        I implemented the emissive participating media following the
+        <a href="https://graphics.pixar.com/library/MISEmissive/paper.pdf">technical memo</a> from Pixar. MIS sampling is used
+        and the emitter is sampled both outside the media and side the media. Specifically, the equation for ems sampling is
+        on the left and the equation for brdf sampling is on the right.<br>
+        <img src="images/ziyao_val/emissive_ems_equi.png" width="350" alt="emissive_ems_eq"/>
+        <img src="images/ziyao_val/emissive_brdf_equi.png" width="350" alt="emissive_mats_eq"/><br>
+        Here, <i>f()</i> is the bsdf, <i>G()</i> is the visibility divided by the distance between the two points.
+        <i>p()</i> is the possibility of the value inserted being sampled. <i>tao()</i> is the transmittance. <i>Epsilon</i>
+        is the volumetric emission. <i>vis()</i> is the geometric visibility.
+    </p>
+
+    <h4>Validations</h4>
+    <p>Related scenes:</p>
+    <ol>
+        <li> <code>validation/rainbow_decay_compare_111000_homo.xml</code></li>
+        <li> <code>validation/emissive_light_on_111000_10,50.xml</code><i>note: important instructions on line 58.</i></li>
+        <li> <code>validation/emissive_light_off_111111_00,51.xml</code><i>note: important instructions on line 58.</i></li>
+        <li> <code>validation/emissive_light_on_111111_00,51.xml</code><i>note: important instructions on line 59.</i></li>
+    </ol>
+    <p>Here, we compare the difference between making the same media emissive/non-emissive</p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/rainbow_decay_compare_111000_homo.png" alt="non-emissive" class="img-responsive">
+        <img src="images/ziyao_val/emissive_light_on_111000_10,50.png" alt="emissive" class="img-responsive">
+    </div> <br>
+
+    <p>Here, we compare the difference between sampling the area emitter + emissive media and sampling only the emissive
+        media (with a solid diffuse ball in the middle)</p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/emissive_light_off_111111_00,51.png" alt="lights_off" class="img-responsive">
+        <img src="images/ziyao_val/emissive_light_on_111111_00,51.png" alt="lights_on" class="img-responsive">
+    </div> <br>
+
+    <h3>Spotlight emitter - 5pts</h3>
+    <p>Modified files:</p>
+    <ol>
+        <li> <code>src/spotlight.cpp </code>(new)</li>
+    </ol>
+
+    <p>This implementation is inspired by the spotlight in mitsuba. The emitter is bounded by the following parameters:
+        <i>position, intensity, direction:</i> the direction of the center of the cone of the emitted light, <i>total width</i>,
+         the maximum angle between the beam edge and the center of the beam, and <i>fall off start</i>, the maximum angle against the
+        beam center before the light starts to fade.
+    </p>
+
+    <h4>Validations</h4>
+    <p>Related scenes:</p>
+    <ol>
+        <li> <code>validation/spot.xml</code><i>note: important instructions on line 58.</i></li>
+    </ol>
+    <p>Here, with a total width of 20 degrees, let's see the differences of fallout values of 0, 10, and 20 degrees. </p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/spot_width20_fallout_10.png" alt="fallout=10" class="img-responsive">
+        <img src="images/ziyao_val/spot_width_same_fallout.png" alt="fallout=20" class="img-responsive">
+        <img src="images/ziyao_val/spot_width20_fallout_0.png" alt="fallout=0" class="img-responsive">
+    </div> <br>
+
+
+    <h3>Equiangular sampling - 10pts</h3>
+    <p>Modified files:</p>
+    <ol>
+        <li> <code>src/media_equiangular.cpp </code>(new)</li>
+    </ol>
+    <p>Equiangular sampling is implemented according to the <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-8659.2012.03148.x?saml_referrer">paper</a>
+        provided in the feature list. I implemented the geometries in the <a href="https://onlinelibrary.wiley.com/cms/asset/a3d1704e-c1e6-469f-92e4-2ad85685f5ab/cgf_3148_f2.gif">picture</a>
+        and made use of this sampling technique while the ray is inside the media. Using step=0.005, I looked for the best values of
+        <i>a</i> and <i>b</i>--the integration bounds.
+    </p>
+    <h4>Validations</h4>
+    <p>Related scenes:</p>
+    <ol>
+        <li> <code>validation/equi.xml</code><i>note: important instructions on line 6.</i></li>
+    </ol>
+    <p>Here, I placed a point light source inside a spherical medium and recorded the different effects of <i>a</i> and
+    <i>b</i> using a step_size of 0.005.</p>
+    <div class="twentytwenty-container">
+        <img src="images/ziyao_val/equi_0_01_.png" alt="a=-0.01, b=0.01" class="img-responsive">
+        <img src="images/ziyao_val/equi_0_02.png" alt="a=-0.02, b=0.02" class="img-responsive">
+        <img src="images/ziyao_val/equi_0_03.png" alt="a=-0.03, b=0.03" class="img-responsive">
+        <img src="images/ziyao_val/equi_0_04.png" alt="a=-0.04, b=0.04" class="img-responsive">
+    </div> <br>
+
+
+
+    <h2>4 Final scene</h2>
+    <img src="images/motivation/final_image.png" width="990" alt="Final scene"/>
+    <p><font size=4>The majority of our scene are covered with clouds. To model the thickness of clouds and randomly distributed surface, we first use <code>Homogeneous volume</code> to model the cloud base. Then, we apply perlin noise to the cloud crust, which generates a heterogeneous cloud debris. <br>
+        We use four light sources in total: one environment map to simulate the galaxy; one area light to model the shiny "goddess" planet; and two directional light put in both front and back to maintain the scene in good lighting condition. The boat, whales and snow mountains leverage texture mapping and disney BSDF. Since this scene is pretty time comsuming to render, we only set spp as 16 to get this result. </font></p>
+    <br>
+</div>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="resources/bootstrap.min.js"></script>
+<script src="resources/jquery.event.move.js"></script>
+<script src="resources/jquery.twentytwenty.js"></script>
+
+
+<script>
+$(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
+</script>
+
+</body>
+</html>
