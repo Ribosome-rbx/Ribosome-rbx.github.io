@@ -18,7 +18,10 @@ main:
     url: "#selected-projects"
     
   - title: "CV"
-    url: /cv/
+    url: /files/cv_EN.pdf
+
+  - title: "中文"
+    url: /files/cv_CN.pdf
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
