@@ -26,9 +26,6 @@ Course project of Computer Graphics 2022 in ETH Zurich
 [[Website]()][[Oral Present](https://www.youtube.com/live/wtH4PCtMOoY?feature=share&t=3691)][Code(not available)]  
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="600px">  
-<video width="600" controls>
-  <source src="../images/rendering_competition.mp4" type="video/mp4">
-</video>
 
 Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
