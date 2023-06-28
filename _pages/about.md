@@ -38,7 +38,7 @@ Our renderer is built from stratch using Nori codebase. In the project, I built 
 ## Motion Matching for Responsive Animation for Digital Humans
 <strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han\*, Hang Yin\*  
 Course project of Digital Humans 2023 in ETH Zurich  
-[[Report]()][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
+[[Report](https://ribosome-rbx.github.io/files/motion_matching.pdf)][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
 <img src="../images/dg.gif" alt="Project Profile" width="600px">
 
 Motion matching is a simple yet effective character animation tool for synthesizing motions that follow a user’s high-level command input. In this project, we implement a motion matching pipeline from scratch by utilizing publicly available motion capture dataset ([LaFan1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)). Checkout the real-time (video game-like!) [demo](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb) of responsive character animation. 
@@ -50,7 +50,7 @@ Apart from the pipeline, we achieved **multiple means of control**: keyboard, pa
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
 <strong>Boxiang Rong</strong>, Zilong Deng, Ziyao Shang, Minjing Shi  
 Course project of 3D Vision 2023 in ETH Zurich  
-[[Report]()][[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
+[[Report](https://ribosome-rbx.github.io/files/3DV.pdf)][[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
 <img src="../images/annaroom.gif" alt="Project Profile" width="600px">  
 
 Motion blur happens with fast head-camera movement and long exposure times. In this project, we proposed to reconstruct the indoor environment in advance and render clear images to replace blurry camera views to achieve the goal of image stabilization. We used four pipelines, including traditional reconstruction and NeRF-based methods ([Depth-Supervised NeRF](https://github.com/dunbar12138/DSNeRF), [Deblur NeRF](https://github.com/limacv/Deblur-NeRF), [Instant NGP](https://github.com/NVlabs/instant-ngp)). We did experiments to test the stabilizing performance and analyze the pros and cons of each pipeline. We also proposed **adding camera motion information** to Deblur NeRF for better deblurring and verified the performance of our modification.
