@@ -26,7 +26,7 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 ## ETH 2022 Rendering Competition
 <strong>Boxiang Rong</strong>\*, Ziyao Shang\*  
 Course project of Computer Graphics 2022 in ETH Zurich  
-[[Website1](https://ribosome-rbx.github.io/2022_rendering_competition/)] | [[Website2](https://ribosome-rbx.github.io/files/2022_rendering_competition.html)][[Oral Present](https://www.youtube.com/live/wtH4PCtMOoY?feature=share&t=3691)][Code(not available)]  
+[[Website](https://ribosome-rbx.github.io/files/2022_rendering_competition.html)][[Oral Present](https://www.youtube.com/live/wtH4PCtMOoY?feature=share&t=3691)][Code(not available)]  
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="600px">  
 
