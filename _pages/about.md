@@ -48,7 +48,7 @@ Apart from the pipeline, we achieved **multiple means of control**: keyboard, pa
 <strong>Boxiang Rong</strong>, Zilong Deng, Ziyao Shang, Minjing Shi  
 Course project of 3D Vision 2023 in ETH Zurich  
 [[Report]()][[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
-<img src="../images/room.gif" alt="Project Profile" width="600px">  
+<img src="../images/annaroom.gif" alt="Project Profile" width="600px">  
 
 Motion blur happens with fast head-camera movement and long exposure times. In this project, we proposed to reconstruct the indoor environment in advance and render clear images to replace blurry camera views to achieve the goal of image stabilization. We used four pipelines, including traditional reconstruction and NeRF-based ones ([Depth-Supervised NeRF](https://github.com/dunbar12138/DSNeRF), [Deblur NeRF](https://github.com/limacv/Deblur-NeRF), [Instant NGP](https://github.com/NVlabs/instant-ngp)). Experiments were done on three scenes to test the stabilizing performance and analyze the pros and cons of each pipeline. We also proposed **adding camera motion information** to Deblur NeRF for better deblurring and verified the performance of our modification.
 
@@ -57,13 +57,13 @@ Main Contributions:
 * Modified Deblur Nerf to load our dataset and add trajectory information to better model blurry pattern
 
 ## Priority Labeling in The Scenarios of Self-Driving
-<strong>Boxiang Rong</strong>, [Hang Zhao](https://hangzhaomit.github.io/)
+<strong>Boxiang Rong</strong>, [Hang Zhao](https://hangzhaomit.github.io/)  
 Research project in Shanghai [Qi Zhi Institute](https://sqz.ac.cn/en) 2022  
-[[Code](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Slides](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
+[[Code](https://github.com/Ribosome-rbx/detmetric)][[Slides](https://docs.google.com/presentation/d/1IhTVg7qeNFhnkSjIlrXehNOPWBuDZcuHGkt0_8GhFJ0/edit?usp=sharing)]   
 <img src="../images/drive.gif" alt="Project Profile" width="600px">
 
-Street scenarios is generally complex, where numbers of pedestrains, vehicles and obstacles interact with each other. But we don't need to pay equal attention to all of the visible targets. Instead, similar to human drivers, we only care about the important target that are most likely to appear in our way and influence our driving.
+Street scenarios are generally complex, where numbers of pedestrains, vehicles and obstacles interact with each other. However, we don't need to pay equal attention to all of the visible targets. Instead, similar to human drivers, we only care about the important target that are most likely to appear in our way and influence our driving.
 
-Our work is done on on Nuscenes dataset. We arranged human labellers to put priority levels to all visible targets, and also designed rule-based algorithm to automaticly labeling priorities. 
+Our work is done on on Nuscenes dataset. We arranged human labellers to annotate priority levels to all visible targets, and also designed rule-based algorithm to automaticly labeling priorities. 
 
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff&w=a"></script>
