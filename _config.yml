@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Boxiang Rong's Homepage"
+title                    : "Boxiang Rong 荣波翔"
 title_separator          : "-"
 name                     : &name "Boxiang Rong"
 description              : &description "MSc of Robotics, Systems and Control in ETH Zurich"
