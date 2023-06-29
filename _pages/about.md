@@ -5,11 +5,12 @@ excerpt: "Boxiang Rong's HomePage"
 author_profile: true
 redirect_from: 
   - /about/
-  - /google4ad529ca62448449.html
+  - /about.html
 ---
+
 {% include toc %}
 
-8KMO4LznyOmx7POuoBuS_h4LsSeD3pDRqALXwTl
+
 My name is Boxiang Rong(荣波翔), I am currently a Master student of Robotics, Systems, and Control (RSC) in [ETH Zurich](https://ethz.ch/en.html). I obtained my Bachelor degree in [Tianjin University](http://www.tju.edu.cn/english/index.htm), and I was supervised by Prof. Dr. [Yuxiong Wang](https://yxw.web.illinois.edu/) for my Bachelor thesis.
 
 My interests lie in the fields of computer graphics and computer vision. I am fascinated with creating immersive virtual world and committed to working in the areas of rendering, character motion, and physics-based simulation.
