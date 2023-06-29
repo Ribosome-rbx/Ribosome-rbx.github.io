@@ -7,6 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<meta name="google-site-verification" content="8KMO4LznyOmx7POuoBuS_h4LsSeD3pDRqALXwTl-yHw" />
 
 {% include toc %}
 
