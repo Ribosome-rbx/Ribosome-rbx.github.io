@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-CH"
-title                    : "Boxiang Rong"
-title_separator          : "-"
+locale                   : "en-US"
+title                    : "Boxiang Rong's Homepage"
+title_separator          : ""
 name                     : &name "Boxiang Rong"
 description              : &description "MSc of Robotics, Systems and Control in ETH Zurich"
 url                      : https://ribosome-rbx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
