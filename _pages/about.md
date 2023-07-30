@@ -66,7 +66,7 @@ Research project in Shanghai [Qizhi AI Lab](https://sqz.ac.cn/en) 2022
 
 Street scenarios are generally complex, where numbers of pedestrains, vehicles and obstacles interact with each other. However, we don't need to pay equal attention to all of the visible targets. Instead, similar to human drivers, we only care about the important target that are most likely to appear in our way and influence our driving.
 
-Our work is done on on Nuscenes dataset. We arranged human drivers to **manually annotate** priority levels to all visible targets. And we also designed **rule-based algorithm** to automaticly annotate priorities, which considers information, like distance and relative velocity between ego and targets, trajectory intersections, and map-based terrain information.
+Our work is done on on Nuscenes dataset. We arranged human drivers to **manually annotate** priority levels to all visible targets. And we also designed **rule-based algorithm** to automatically annotate priorities, which considers information, like distance and relative velocity between ego and targets, trajectory intersections, and map-based terrain information.
 
 <!-- <div style="position: relative; width: 50%;"> -->
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&cl=ffffff&w=a" width="200px">
