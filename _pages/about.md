@@ -31,7 +31,7 @@ Course project of Computer Graphics 2022 in ETH Zurich
 
 Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
-Our renderer is built from stratch using Nori codebase. In the project, I built the whole scene in blender and implemented rendering functions, like Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
+Our renderer is built from scratch using Nori codebase. In the project, I built the whole scene in blender and implemented rendering functions, like Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
 
 
 ## Motion Matching for Responsive Animation for Digital Humans
