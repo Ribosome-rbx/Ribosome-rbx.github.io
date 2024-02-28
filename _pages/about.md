@@ -16,8 +16,8 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 
 ## Education
 
-* 2022 - Present, Master of Science, Robotics Systems and Contorl, ETH Zurich, Switzerland.
-* 2018 - 2022, Bachelor of Engineering, Communication Engineering, Tianjin University, China.
+* 2022 - Present, MSc, Robotics Systems and Contorl, ETH Zurich, Switzerland.
+* 2018 - 2022, B.E., Communication Engineering, Tianjin University, China.
 
 
 
