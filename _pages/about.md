@@ -22,7 +22,7 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 # Publication
 ## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
 Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
-[[arxiv]()][[Code]()](coming soon)  
+[[arxiv]()][[Code](_)](coming soon)  
 <img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
 
 
