@@ -20,14 +20,15 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 * 2018 - 2022, B.E., Communication Engineering, Tianjin University, China.
 
 # Publication
+
 ## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
 Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
+Conference on Computer Vision and Pattern Recognition (CVPR), 2024  
 [[arxiv]()][[Code]()] (coming soon)    
 <img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
 
 
 # Selected Projects
-
 
 ## ETH 2022 Rendering Competition
 <strong>Boxiang Rong</strong>\*, Ziyao Shang\*  
@@ -65,7 +66,7 @@ To summarize the pipeline: After loading human skeleton motion data, we construc
 Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We collected a [pose dataset](https://github.com/Ribosome-rbx/pose-classifier-on-fastpose) to turn pose into command by classification, and leveraged [FastPose](https://drnoodle.github.io/fastpose_html/) to capture poses in real-time. 
 
 ## Rendering Trees in Mixed Reality
-<strong>Boxiang Rong</strong>\*,  Marius Debussche\* · David Kamm\* . Adrien Lanne\*  
+<strong>Boxiang Rong</strong>\*,  Marius Debussche\*, David Kamm\*, Adrien Lanne\*  
 Course project of Mixed Reality 2023 in ETH Zurich   
 [[Report](https://ribosome-rbx.github.io/files/MR.pdf)][[Video](https://youtu.be/BjEJ_WHgWJg)][[Poster](https://docs.google.com/presentation/d/1MjJEeYk3IWrWuV2Ctf4495X7Q1sQIUH11DDMn2zhPJI/edit?usp=sharing)]    
 <img src="../images/tree.gif" alt="Project Profile" width="600px">
