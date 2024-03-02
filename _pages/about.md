@@ -14,14 +14,21 @@ My name is Boxiang Rong(荣波翔), I am currently a Master student of Robotics,
 
 My interests lie in the fields of computer graphics and computer vision. I am fascinated with creating immersive virtual world and committed to working in the areas of rendering, character motion, and physics-based simulation.
 
-## Education
+# Education
 
 * 2022 - Present, MSc, Robotics Systems and Contorl, ETH Zurich, Switzerland.
 * 2018 - 2022, B.E., Communication Engineering, Tianjin University, China.
 
+# Publication
+## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
+Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
+[arxiv][Code]
+<img src="../images/4ddress_simulation.gif" alt="Project Profile" width="600px">  
 
 
 # Selected Projects
+
+
 ## ETH 2022 Rendering Competition
 <strong>Boxiang Rong</strong>\*, Ziyao Shang\*  
 Course project of Computer Graphics 2022 in ETH Zurich  
@@ -32,6 +39,17 @@ Course project of Computer Graphics 2022 in ETH Zurich
 Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
 Our renderer is built from scratch using Nori codebase. In the project, I built the whole scene in blender and implemented rendering functions, like Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
+
+
+## Position-based Fluid and Foam simulation
+<strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han\*  
+Course project of Physically-Based Simulation 2023 in ETH Zurich  
+[[Slide](https://docs.google.com/presentation/d/1FDaCpLuZ-d3ePbB2i_EjrVKCm3rL1_fY/edit?usp=sharing&ouid=113618116785952766072&rtpof=true&sd=true)][[Demo](https://youtu.be/6cz7K6m6m8M?si=7OyMHdkqVaCZ09Kk)][[Code](https://github.com/guo-han/Position-Based-Fluids.git)]  
+<img src="../images/bunny_in_the_water.png" alt="Project Profile" width="600px">  
+
+"Bunny in the water" -- We implemented the 3D position-based fluids simulation using __Taichi language__. And we handled collisions of simple __static rigid body__ and used AABB to facilitate. We reimplemented __foam simulation__ from SPlisHSPlasH in Taichi to simulate white particles: spray, foam and bubbles. Thanks to the CPU/GPU parallelization empowered by Taichi, our whole pipeline can be simulated in __real-time__(~25FPS).
+
+For the rendering part, we used `splashsurf` to reconstruct fluid surface and built the whole scene in Blender. We used `bpy` to instantiate models, materials and finish final rendering.
 
 
 ## Motion Matching for Responsive Animation for Digital Humans
@@ -45,6 +63,21 @@ Motion matching is a simple yet effective character animation tool for synthesiz
 To summarize the pipeline: After loading human skeleton motion data, we constructed **2d and 3d feature base** for all frames of motions. Then we use **spring damper system** to generate smooth trajectories, this information will be combined with current states to match next motion. After each matching, **inertialization** is implemented to get a smooth pose transformation.
 
 Apart from the pipeline, we achieved **multiple means of control**: keyboard, painting and real-time human pose. We collected a [pose dataset](https://github.com/Ribosome-rbx/pose-classifier-on-fastpose) to turn pose into command by classification, and leveraged [FastPose](https://drnoodle.github.io/fastpose_html/) to capture poses in real-time. 
+
+## Rendering Trees in Mixed Reality
+<strong>Boxiang Rong</strong>\*,  Marius Debussche\* · David Kamm\* . Adrien Lanne\*  
+Course project of Mixed Reality 2023 in ETH Zurich   
+[[Report](https://ribosome-rbx.github.io/files/MR.pdf)][[Video](https://youtu.be/BjEJ_WHgWJg)][[Poster](https://docs.google.com/presentation/d/1MjJEeYk3IWrWuV2Ctf4495X7Q1sQIUH11DDMn2zhPJI/edit?usp=sharing)]    
+
+
+
+Development Process: Addressing versioning issues in the development environment, setting up the project in Unity, and deploying it onto the Magic Leap 2 glasses for execution.
+
+Building upon Unity's URP rendering pipeline, our project integrates Shader Graph functionalities to support billboard-based tree models and multiple texture mappings. Additionally, we employ Perlin Noise to create dynamic leaf oscillation animations. Leveraging the Mixed Reality Toolkit (MRTK), we customize the user interface for enhanced interactivity, elevating the tree planting experience.
+
+Our responsibilities encompass the development of this immersive experience, including version management within the development environment, Unity project setup, deployment onto Magic Leap 2 glasses, and the integration of advanced graphical and interaction features utilizing Shader Graph and MRTK.
+
+
 
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
 <strong>Boxiang Rong</strong>, Zilong Deng, Ziyao Shang, Minjing Shi  
