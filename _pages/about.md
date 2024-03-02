@@ -22,7 +22,7 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 # Publication
 ## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
 Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
-[[arxiv]()][[Code](https://ribosome-rbx.github.io/)](coming soon)  
+[[arxiv]()][[Code]()] (coming soon)    
 <img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
 
 
@@ -41,7 +41,7 @@ Theme for this year's rendering competition is _"Out Of Place"_. Our work is ins
 Our renderer is built from scratch using Nori codebase. In the project, I built the whole scene in blender and implemented rendering functions, like Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
 
 
-## Position-based Fluid and Foam simulation
+## Position-based Fluid and Foam Simulation
 <strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han\*  
 Course project of Physically-Based Simulation 2023 in ETH Zurich  
 [[Slide](https://docs.google.com/presentation/d/1FDaCpLuZ-d3ePbB2i_EjrVKCm3rL1_fY/edit?usp=sharing&ouid=113618116785952766072&rtpof=true&sd=true)][[Demo](https://youtu.be/6cz7K6m6m8M?si=7OyMHdkqVaCZ09Kk)][[Code](https://github.com/guo-han/Position-Based-Fluids.git)]  
