@@ -22,8 +22,8 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 # Publication
 ## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
 Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
-[arxiv][Code]
-<img src="../images/4ddress_simulation.gif" alt="Project Profile" width="600px">  
+[[arxiv]()][[Code]()](coming soon)  
+<img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
 
 
 # Selected Projects
@@ -56,7 +56,7 @@ For the rendering part, we used `splashsurf` to reconstruct fluid surface and bu
 <strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han\*, Hang Yin\*  
 Course project of Digital Humans 2023 in ETH Zurich  
 [[Report](https://ribosome-rbx.github.io/files/motion_matching.pdf)][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
-<img src="../images/dg.gif" alt="Project Profile" width="600px">
+<img src="../images/motion_matching.gif" alt="Project Profile" width="600px">
 
 Motion matching is a simple yet effective character animation tool for synthesizing motions that follow a user’s high-level command input. In this project, we implement a motion matching pipeline from scratch by utilizing publicly available motion capture dataset ([LaFan1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)). Checkout the real-time (video game-like!) [demo](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb) of responsive character animation. 
 
@@ -68,15 +68,12 @@ Apart from the pipeline, we achieved **multiple means of control**: keyboard, pa
 <strong>Boxiang Rong</strong>\*,  Marius Debussche\* · David Kamm\* . Adrien Lanne\*  
 Course project of Mixed Reality 2023 in ETH Zurich   
 [[Report](https://ribosome-rbx.github.io/files/MR.pdf)][[Video](https://youtu.be/BjEJ_WHgWJg)][[Poster](https://docs.google.com/presentation/d/1MjJEeYk3IWrWuV2Ctf4495X7Q1sQIUH11DDMn2zhPJI/edit?usp=sharing)]    
+<img src="../images/tree.gif" alt="Project Profile" width="600px">
 
 
+We developed an MR program in Unity for [MagicLeap2](https://www.magicleap.com/magic-leap-2) device, where you can select different types of trees and plant them on the reconstructed ground. 
 
-Development Process: Addressing versioning issues in the development environment, setting up the project in Unity, and deploying it onto the Magic Leap 2 glasses for execution.
-
-Building upon Unity's URP rendering pipeline, our project integrates Shader Graph functionalities to support billboard-based tree models and multiple texture mappings. Additionally, we employ Perlin Noise to create dynamic leaf oscillation animations. Leveraging the Mixed Reality Toolkit (MRTK), we customize the user interface for enhanced interactivity, elevating the tree planting experience.
-
-Our responsibilities encompass the development of this immersive experience, including version management within the development environment, Unity project setup, deployment onto Magic Leap 2 glasses, and the integration of advanced graphical and interaction features utilizing Shader Graph and MRTK.
-
+We built upon Unity's URP rendering pipeline, and achieved realistic rendering of trees by using Shader Graph. Our pipeline supports billboard-based models, RGB and normal mapping, environment map. Additionally, we employ Perlin Noise to create dynamic leaf oscillation animations. Leveraging the Mixed Reality Toolkit (MRTK), we customize the user interface for enhanced interactivity, elevating the tree planting experience.
 
 
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
