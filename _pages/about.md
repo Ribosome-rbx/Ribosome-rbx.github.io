@@ -27,7 +27,6 @@ Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 [[arxiv]()][[Code]()] (coming soon)    
 <img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
 
-
 # Selected Projects
 
 ## Nori CPU Render
