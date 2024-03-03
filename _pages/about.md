@@ -36,7 +36,7 @@ Course project of Computer Graphics 2022 in ETH Zurich
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="600px">  
 
-We built our own offline physically-based renderer based on the educational ray tracing framework Nori 2, written in C++. And our final image is selected for presentation in ETH 2022 Rendering Competition. 
+We built our own offline physically-based renderer on Nori -- an educational ray tracing framework, written in C++. Our final image is selected for presentation in ETH 2022 Rendering Competition. 
 
 Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
