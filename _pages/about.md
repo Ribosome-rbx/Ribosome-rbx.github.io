@@ -30,16 +30,18 @@ Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 
 # Selected Projects
 
-## ETH 2022 Rendering Competition
+## Nori CPU Render
 <strong>Boxiang Rong</strong>\*, Ziyao Shang\*  
 Course project of Computer Graphics 2022 in ETH Zurich  
 [[Website](https://ribosome-rbx.github.io/files/2022_rendering_competition.html)][[Oral Present](https://www.youtube.com/live/wtH4PCtMOoY?feature=share&t=3691)][Code(not available)]  
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="600px">  
 
+We built our own offline physically-based renderer based on the educational ray tracing framework Nori 2, written in C++. And our final image is selected for presentation in ETH 2022 Rendering Competition. 
+
 Theme for this year's rendering competition is _"Out Of Place"_. Our work is inspired by Chinese anime movie [Big Fish & Begonia](https://www.imdb.com/title/tt1920885/) and ancient literature [A Happy Excursion(逍遥游)](https://link.springer.com/chapter/10.1007/978-3-662-48075-5_1). In which we built huge fishes(named K'un) flying in the universe, and voyagers sailing on clouds towards the northernmost of the world.
 
-Our renderer is built from scratch using Nori codebase. In the project, I built the whole scene in blender and implemented rendering functions, like Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
+In the project, I built the whole scene in blender and implemented rendering functions, like Multi-Importance Sampling, Path Tracing, Photon Mapping, Environment Map, Disney BSDF, Procedural Volume, Texture Mapping and Low-Discrepancy Sampling .etc
 
 
 ## Position-based Fluid and Foam Simulation
