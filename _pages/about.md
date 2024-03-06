@@ -75,7 +75,7 @@ Course project of Mixed Reality 2023 in ETH Zurich
 
 We developed an MR program in Unity for [MagicLeap2](https://www.magicleap.com/magic-leap-2) device, where you can select different types of trees and plant them on the reconstructed ground. 
 
-We built upon Unity's URP rendering pipeline, and achieved realistic rendering of trees by using Shader Graph. Our pipeline supports billboard-based models, RGB and normal mapping, environment map. Additionally, we employ Perlin Noise to create dynamic leaf oscillation animations. Leveraging the Mixed Reality Toolkit (MRTK), we customize the user interface for enhanced interactivity, elevating the tree planting experience.
+We built upon Unity's URP rendering pipeline, and achieved realistic rendering of trees by custimizing Shader Graph. Our pipeline supports billboard-based models, RGB and normal mapping, environment map. Additionally, we employ Perlin Noise to create dynamic leaf oscillation animations. Leveraging the Mixed Reality Toolkit (MRTK), we customize the user interface for enhanced interactivity, elevating the tree planting experience.
 
 
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
