@@ -19,13 +19,13 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 * 2022 - Present, MSc, Robotics Systems and Contorl, ETH Zurich, Switzerland.
 * 2018 - 2022, B.E., Communication Engineering, Tianjin University, China.
 
-# Publication
+<!-- # Publication
 
 ## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
 Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
 Conference on Computer Vision and Pattern Recognition (CVPR), 2024  
 [[arxiv]()][[Code]()] (coming soon)    
-<img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
+<img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">   -->
 
 # Selected Projects
 
