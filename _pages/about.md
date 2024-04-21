@@ -24,7 +24,7 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 ## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
 Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
 Conference on Computer Vision and Pattern Recognition (CVPR), 2024  
-[[arxiv]()][[Code]()] (coming soon)    
+[[Project Page](https://xpandora.github.io/PhysGaussian/)][[Video](https://youtu.be/dEQ4dvO8BsE?si=s-qxrYL-dLcCoIsV)][[arxiv]()][[Code]()(coming soon)]   
 <img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
 
 # Selected Projects
@@ -32,7 +32,7 @@ Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 ## Nori CPU Render
 <strong>Boxiang Rong</strong>\*, Ziyao Shang\*  
 Course project of Computer Graphics 2022 in ETH Zurich  
-[[Website](https://ribosome-rbx.github.io/files/2022_rendering_competition.html)][[Oral Present](https://www.youtube.com/live/wtH4PCtMOoY?feature=share&t=3691)][Code(not available)]  
+[[Website](https://ribosome-rbx.github.io/files/2022_rendering_competition.html)][[Present](https://www.youtube.com/live/wtH4PCtMOoY?feature=share&t=3691)][Code(not available)]  
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="600px">  
 
