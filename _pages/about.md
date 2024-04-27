@@ -24,7 +24,7 @@ My interests lie in the fields of computer graphics and computer vision. I am fa
 ## 4D-DRESS: A 4D Dataset of Real-World Human Clothing With Semantic Annotations
 Wenbo Wang\*, Hsuan-I Ho\*, Chen Guo, <strong>Boxiang Rong</strong>, Artur Grigorev, Jie Song, Juan Jose Zarate, Otmar Hilliges   
 Conference on Computer Vision and Pattern Recognition (CVPR), 2024  
-[[Project Page](https://eth-ait.github.io/4d-dress/)][[arxiv](https://files.ait.ethz.ch/projects/4d-dress/4d-dress.pdf)][[Video](https://youtu.be/dEQ4dvO8BsE?si=4AlflvLnFFsrbmMl)]
+[[Project Page](https://eth-ait.github.io/4d-dress/)][[Arxiv](https://files.ait.ethz.ch/projects/4d-dress/4d-dress.pdf)][[Video](https://youtu.be/dEQ4dvO8BsE?si=4AlflvLnFFsrbmMl)]
 <img src="../images/4ddress_simu.gif" alt="Project Profile" width="600px">  
 
 # Selected Projects
