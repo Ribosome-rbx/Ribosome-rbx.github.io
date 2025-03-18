@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Project page for Gaussian Garments">
+  <meta name="keywords" content="gaussian, avatar, computer vision, computer graphics, paper, research, garments, clothing"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaussian Garments: Reconstructing Simulation-Ready Clothing with Photo-Realistic Appearance from Multi-View Video</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <!-- <link rel="icon" href="static/images/contour.png"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title  is-2 publication-title">Gaussian Garments:<br>Reconstructing Simulation-Ready Clothing with Photo-Realistic Appearance from Multi-View Video</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ribosome-rbx.github.io/">Boxiang Rong</a><sup>* 1</sup>,</span>
+            <span class="author-block">
+              <a href="https://dolorousrtur.github.io/">Artur Grigorev</a><sup>* 1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://wenbwa.github.io">Wenbo Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ps.is.mpg.de/~black">Michael J. Black</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://n.ethz.ch/~bthomasz/index.html">Bernhard Thomaszewski</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/ctsalico">Christina Tsalicoglou</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1 </sup>ETH Zurich, Switzerland,</span>
+            <span class="author-block"><sup>2 </sup>Max Planck Institute for Intelligent Systems, Tübingen, Germany</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="TODO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2409.08189"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/hi-SHdvRkVY"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Ribosome-rbx/Gaussian-Garments.git"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%" preload="auto">
+        <source src="./assets/resized/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        A novel approach for reconstructing <b>realistic-looking</b>, <b>simulation-ready garments</b> from <b>multi-view videos</b>. 
+        The resulting virtual garments can then be combined into complex outfits, automatically <u><i>resized</i></u> and <u><i>simulated</i></u> in dynamic scenes.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce Gaussian Garments, a novel approach for reconstructing realistic-looking, simulation-ready garment assets from multi-view videos. 
+            Our method represents garments with a combination of a 3D mesh and a Gaussian texture that encodes both the color and high-frequency surface details.
+            This representation enables accurate registration of garment geometries to multi-view videos and helps disentangle albedo textures from lighting effects.
+            Furthermore, we demonstrate how a pre-trained Graph Neural Network (GNN) can be fine-tuned to replicate the real behavior of each garment.
+            The reconstructed Gaussian Garments can be automatically combined into multi-garment outfits and animated with the fine-tuned GNN.              <br><br>
+          </p>
+        </div>
+        <div class="publication-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hi-SHdvRkVY?si=90FpBvjxCSU1r3k7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="Method Overview">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method Overview</h2>
+      <hr>
+      <video id="teaser" autoplay controls muted loop playsinline height="100%">
+        <source src="./assets/resized/ProjectPageMethod.mp4"
+                type="video/mp4">
+      </video>
+      <p>
+        Our pipeline consists of four stages: 
+        1) We initialize the garment's 3D mesh and 3DGS-based appearance from a single multi-view frame.
+        2) We register the garment geometry to all multi-view videos.
+        3) We optimize the garment's appearance using the multi-view videos and registered sequences. 
+        4) We refine the garment's behavior, by fine-tuning parameters of the garment simulation Graph Neural Network.
+        The resulting garment assets can be directly simulated with the GNN, combined into multi-garment outfits, and resized to fit different body shapes.
+      </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Tracking-based Registration -->
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Tracking-based Registration</h2>
+        <div class="content has-text-centered">
+          <video id="registration" autoplay controls muted loop playsinline width="80%">
+            <source src="./assets/resized/registration.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We reconstruct each garment using a "mesh+Gaussian" representation, which allows us to track Gaussians across different frames and register the underlying mesh. 
+            Our method facilitates the registration of garments with various topologies using only the visual guidance of RGB images and physical constraints. 
+            [<a href="https://drive.google.com/drive/folders/1wFfYHYYXzfhwxe9EhMQ3m925s-AyTkV4?usp=sharing" target="_blank">More results here</a>]
+          </p>
+        </div>
+      </div>
+      <!--/ Tracking-based Registration -->
+    </div>
+
+    <div class="columns is-centered">
+      <!-- Appearance Decomposition -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Appearance Decomposition</h2>
+          <video id="appearance" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/resized/appearance_decomposition.mp4" type="video/mp4">
+          </video>
+          <p>
+            The wrinkles on the garment are constantly changing, leading to varying shadow patterns and reflections. 
+            We train an appearance model to predict these changes based on mesh characteristics, including the normal map and ambient occlusions of both the inner and outer surfaces. 
+            The predicted color offsets effectively decouple the lighting effects from the albedo Gaussian textures. 
+            [<a href="https://drive.google.com/drive/folders/1dntb01LFly40ZeJNaPQuYUm6dUn0uzO1?usp=drive_link" target="_blank">More results here</a>]
+          </p>
+        </div>
+      </div>
+      <!--/ Appearance Decomposition -->
+
+      <!-- Finetuned Garment Behavior -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Finetuned Garment Behavior</h2>
+          <video id="simulate" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/resized/material.mp4" type="video/mp4">
+          </video>
+          <p>
+            We fine-tune the parameters of a neural simulator to accurately replicate the real-world behavior of garments. 
+            In the videos above, bright colors indicate a large deviation from the ground truth (registered mesh), while dark colors signify a close match. 
+            Our final output achieves a closer alignment with the ground truth, resulting in a more realistic garment appearance. 
+            [<a href="https://drive.google.com/drive/folders/17xzk8hhPEQsDXSTUFMu2jVrGUsUb8lQe?usp=sharing" target="_blank">More results here</a>]
+          </p>
+        </div>
+      </div>
+      <!--/ Finetuned Garment Behavior -->
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="Applications">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Applications</h2>
+    <hr>
+    <div class="columns is-centered">
+      <!-- Garment Mix-and-Match -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Garment Mix-and-Match</h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/resized/1by1drapping.mp4" type="video/mp4">
+          </video>
+          <p>We can combine garments recovered from different subjects into complex multi-layer outfits and simulate them together. </p>
+        </div>
+      </div>
+      <!--/ Garment Mix-and-Match -->
+
+      <!-- Resizing. -->
+      <div class="column">
+        <h2 class="title is-3">Garment Resizing </h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./assets/resized/resizing.mp4" type="video/mp4">
+            </video>
+            <p>With the trained gaussian appearance, we can also automatically resize the garments to match desired body shapes. </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Resizing. -->
+    </div>
+
+    <div class="columns is-centered">
+      <!-- Multi-layer. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Multi-layer Simulations</h2>
+        <div class="content has-text-justified">
+          <p>
+            We use a Graph Neural Network (GNN) and fine-tune its parameters to simulate garments with real-world behavior. 
+            Our trained appearance model can be applied to any novel pose, here simulated by the GNN, and is robust in dynamic sequences with multi-layer settings. 
+            Additionally, we check the visibility of Gaussians on inner layers and filter out occluded Gaussians to prevent penetrations.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video" autoplay controls muted loop playsinline width="80%">
+            <source src="./assets/resized/multi_layer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Multi-layer. -->
+  </div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{rong2024gaussiangarments,
+      title={Gaussian Garments: Reconstructing Simulation-Ready Clothing with Photorealistic Appearance from Multi-View Video}, 
+      author={Boxiang Rong and Artur Grigorev and Wenbo Wang and Michael J. Black and Bernhard Thomaszewski and Christina Tsalicoglou and Otmar Hilliges},
+      year={2024},
+      eprint={2409.08189},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2409.08189">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/Ribosome-rbx/Gaussian-Garments.git" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>. <br>
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
