@@ -12,7 +12,7 @@ redirect_from:
 
 ## Nori CPU Render
 <strong>Boxiang Rong</strong>\*, Ziyao Shang\*  
-Course project of Computer Graphics 2022 in ETH Zurich  
+Course project of Computer Graphics 2022 at ETH Zurich  
 [[Website](https://ribosome-rbx.github.io/files/2022_rendering_competition.html)][[Present](https://www.youtube.com/live/wtH4PCtMOoY?feature=share&t=3691)][Code(not available)]  
 <!-- ![Project Profile](../images/rendering_competition.gif) -->
 <img src="../images/rendering_competition.gif" alt="Project Profile" width="600px">  
@@ -25,7 +25,7 @@ In the project, I built the whole scene in blender and implemented rendering fun
 
 ## Position-based Fluid and Foam Simulation
 <strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han\*  
-Course project of Physically-Based Simulation 2023 in ETH Zurich  
+Course project of Physically-Based Simulation 2023 at ETH Zurich  
 [[Slide](https://docs.google.com/presentation/d/1FDaCpLuZ-d3ePbB2i_EjrVKCm3rL1_fY/edit?usp=sharing&ouid=113618116785952766072&rtpof=true&sd=true)][[Demo](https://youtu.be/6cz7K6m6m8M?si=7OyMHdkqVaCZ09Kk)][[Code](https://github.com/guo-han/Position-Based-Fluids.git)]  
 <img src="../images/bunny_in_the_water.png" alt="Project Profile" width="600px">  
 
@@ -35,7 +35,7 @@ For the rendering part, we used `splashsurf` to reconstruct fluid surface and bu
 
 ## Motion Matching for Responsive Animation for Digital Humans
 <strong>Boxiang Rong</strong>\*, Longteng Duan\*, Guo Han\*, Hang Yin\*  
-Course project of Digital Humans 2023 in ETH Zurich  
+Course project of Digital Humans 2023 at ETH Zurich  
 [[Report](https://ribosome-rbx.github.io/files/motion_matching.pdf)][[Code](https://github.com/Ribosome-rbx/Motion-Matching-for-Human-Skeleton)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtYXr-pVqqUgSG1Ncxp4UzAb)][[Slides](https://docs.google.com/presentation/d/13Kz_PvJAkfzi9m_gFjUCRpPG92N0RBROceEzudvjc8I/edit?usp=sharing)]  
 <img src="../images/motion_matching.gif" alt="Project Profile" width="600px">
 
@@ -47,7 +47,7 @@ Apart from the pipeline, we achieved **multiple means of control**: keyboard, pa
 
 ## Rendering Trees in Mixed Reality
 <strong>Boxiang Rong</strong>\*,  Marius Debussche\*, David Kamm\*, Adrien Lanne\*  
-Course project of Mixed Reality 2023 in ETH Zurich   
+Course project of Mixed Reality 2023 at ETH Zurich   
 [[Report](https://ribosome-rbx.github.io/files/MR.pdf)][[Video](https://youtu.be/BjEJ_WHgWJg)][[Poster](https://docs.google.com/presentation/d/1MjJEeYk3IWrWuV2Ctf4495X7Q1sQIUH11DDMn2zhPJI/edit?usp=sharing)]    
 <img src="../images/tree.gif" alt="Project Profile" width="600px">
 
@@ -59,7 +59,7 @@ We built upon Unity's URP rendering pipeline, and achieved realistic rendering o
 
 ## Head-Worn Camera Image Stabilization using Neural Radiance Field
 <strong>Boxiang Rong</strong>, Zilong Deng, Ziyao Shang, Minjing Shi  
-Course project of 3D Vision 2023 in ETH Zurich  
+Course project of 3D Vision 2023 at ETH Zurich  
 [[Report](https://ribosome-rbx.github.io/files/3DV.pdf)][[Code1](https://github.com/Ribosome-rbx/Color_Map_Optimization)][[Code2](https://github.com/Ribosome-rbx/TrajDeblur-NeRF)][[Demos](https://youtube.com/playlist?list=PLUffCQyBEYtbOQg4-66ZrcuNmsX0OXVKv)][[Poster](https://docs.google.com/presentation/d/1ka6ztHGhPxwDq_VgpPXk0cOhuihfD-ee4sKPxdE_RLg/edit?usp=sharing)]  
 <img src="../images/annaroom.gif" alt="Project Profile" width="600px">  
 

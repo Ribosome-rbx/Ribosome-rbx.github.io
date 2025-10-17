@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Boxiang Rong"
 title_separator          : "-"
 name                     : &name "Boxiang Rong"
-description              : &description "MSc of Robotics, Systems and Control in ETH Zurich"
+description              : &description "MSc of Robotics, Systems and Control at ETH Zurich"
 url                      : https://ribosome-rbx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Ribosome-rbx.github.io"
@@ -23,7 +23,7 @@ author:
   # Biographic information
   name             : "Boxiang Rong"
   avatar           : "profile.jpg"
-  bio              : "MSc of Robotics, Systems and Control in ETH Zurich"
+  bio              : "MSc of Robotics, Systems and Control at ETH Zurich"
   location         : "Switzerland"
   employer         : # Name
   uri              : # URL
