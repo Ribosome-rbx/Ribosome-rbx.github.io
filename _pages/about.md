@@ -27,7 +27,7 @@ My research interests lie at the intersection of computer graphics and computer 
 [Zhi Ying\*](https://orcid.org/0009-0008-8390-3366), <strong>Boxiang Rong\*</strong>, [Jingyu Wang](https://ccetaw.github.io/), [Maoyuan Xu](https://ultraman-blazar.github.io/)<br>
 **SIGGRAPH Asia 2025** <br>
 [[Project Page](https://ubisoft-laforge.github.io/world/chord/)][[Arxiv](https://arxiv.org/abs/2509.09952)][[Code (Coming Soon)](https://ubisoft-laforge.github.io/world/chord/)]
-<video autoplay muted loop playsinline width="700px"> 
+<video autoplay muted loop playsinline width="700px" preload="auto"> 
 <source src="../images/chord_teaser_video.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -36,7 +36,7 @@ Your browser does not support the video tag.
 Boxiang Rong\*, [Artur Grigorev\*](https://dolorousrtur.github.io/), [Wenbo Wang](https://wenbwa.github.io/), [Michael J. Black](https://ps.is.mpg.de/~black), [Bernhard Thomaszewski](https://n.ethz.ch/~bthomasz/index.html), [Christina Tsalicoglou](https://ait.ethz.ch/people/ctsalico), [Otmar Hilliges](https://ait.ethz.ch/people/hilliges)<br>
 **3DV 2025**<br>
 [[Project Page](https://eth-ait.github.io/Gaussian-Garments/)][[Arxiv](https://arxiv.org/abs/2409.08189)][[Code](https://github.com/eth-ait/Gaussian-Garments)][[Video](https://youtu.be/hi-SHdvRkVY)]<br>
-<video autoplay muted loop playsinline width="700px"> 
+<video autoplay muted loop playsinline width="700px" preload="auto"> 
 <source src="../images/GG_teaser.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
