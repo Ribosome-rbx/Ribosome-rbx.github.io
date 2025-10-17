@@ -50,6 +50,6 @@ Your browser does not support the video tag.
 --- 
 
 <!-- <div style="position: relative; width: 50%;"> -->
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&w=450&t=tt&co=ffffff&cmo=b0ed58&cmn=567031&ct=000000">
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Y25n2MtaECuXONMSqo0Fre6WDGJdufXd4bRMP2MIYxg&w=450&t=tt&co=ffffff&cmo=ffd300&cmn=ff5353&ct=000000">
 </script>
 <!-- </div> -->
