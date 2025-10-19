@@ -33,7 +33,7 @@ Your browser does not support the video tag.
 </video>
 
 ## Gaussian Garments: Reconstructing Simulation-Ready Clothing with Photo-Realistic Appearance from Multi-View Video
-Boxiang Rong\*, [Artur Grigorev\*](https://dolorousrtur.github.io/), [Wenbo Wang](https://wenbwa.github.io/), [Michael J. Black](https://ps.is.mpg.de/~black), [Bernhard Thomaszewski](https://n.ethz.ch/~bthomasz/index.html), [Christina Tsalicoglou](https://ait.ethz.ch/people/ctsalico), [Otmar Hilliges](https://ait.ethz.ch/people/hilliges)<br>
+<strong>Boxiang Rong\*</strong>, [Artur Grigorev\*](https://dolorousrtur.github.io/), [Wenbo Wang](https://wenbwa.github.io/), [Michael J. Black](https://ps.is.mpg.de/~black), [Bernhard Thomaszewski](https://n.ethz.ch/~bthomasz/index.html), [Christina Tsalicoglou](https://ait.ethz.ch/people/ctsalico), [Otmar Hilliges](https://ait.ethz.ch/people/hilliges)<br>
 **3DV 2025**<br>
 [[Project Page](https://eth-ait.github.io/Gaussian-Garments/)][[Arxiv](https://arxiv.org/abs/2409.08189)][[Code](https://github.com/eth-ait/Gaussian-Garments)][[Video](https://youtu.be/hi-SHdvRkVY)]<br>
 <video autoplay muted loop playsinline width="700px" preload="auto"> 
